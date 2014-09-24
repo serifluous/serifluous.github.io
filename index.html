@@ -11,6 +11,7 @@
 
 		body {
 			background-color: rgb(242,241,241);
+			color: rgb(40,40,40);
 		}
 
 		a:link {
@@ -19,7 +20,7 @@
 		}
 
 		a:visited {
-			color: rgb(150,80,50);
+			color: rgb(190,120,90);
 			text-decoration: none;
 		}
 
@@ -32,12 +33,24 @@
 		}
 
 		header {
-			color: rgb(40,40,40);
-			font-family: Montserrat;
+			border-bottom: 1px solid rgb(200,200,200);
+			float: left;
+			font-family: Montserrat, Gotham, sans-serif;
+			margin-bottom: 90px;
+			padding-bottom: 70px;
 			position: relative;
 			text-align: center;
 			top: 100px;
-			width: 500px;
+			width: 480px;
+		}
+
+		#header-box {
+			border: 7px solid rgb(40,40,40);
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom: 20px;
+			position: relative;
+			width: 380px;
 		}
 
 		header h1 {
@@ -53,16 +66,59 @@
 
 		header h3 {
 			color: rgb(140,140,140);
-			font-family: "Gentium Book Basic";
+			font-family: "Gentium Book Basic", serif;
 			font-size: 1rem;
 			line-height: 1.6rem;
+			margin-left: auto;
+			margin-right: auto;
 			position: relative;
 			top: 30px;
+			width: 400px;
 		}
 
 		header h3 a:visited {
 			color: rgb(210,140,110);
 			text-decoration: none;
+		}
+
+		.project {
+			border-bottom: 1px solid rgb(200,200,200);
+			float: left;
+			margin-bottom: 30px;
+			margin-left: 20px;
+			position: relative;
+			text-align: center;
+			top: 50px;
+			width: 430px;
+		}
+
+		.project img {
+			width: 396px;
+			height: 594px;
+		}
+
+		.project h3 {
+			font-family: Montserrat, Gotham, sans-serif;
+			font-size: 1.15rem;
+			letter-spacing: 0.1rem;
+		}
+
+		.project h3 a:visited {
+			color: rgb(210,140,110);
+		}
+
+		.project h3 a:hover {
+			color: rgb(220,150,120);
+			text-decoration: none;
+		}
+
+		.project p:nth-child(3) {
+			color: rgb(140,140,140);
+			font-family: "Gentium Book Basic", serif;
+			line-height: 1.5rem;
+			padding-left: 35px;
+			padding-right: 35px;
+			text-align: justify;
 		}
 
 	</style>
@@ -80,16 +136,33 @@
 
 <body>
     <header>
-    	<h1>Sarah Li</h1>
-    	<h2>Data + Design</h2>
 
-    	<h3>Watch me <a href="https://github.com/serifluous">code</a>,
+    	<div id="header-box">
+    		<h1>Sarah Li</h1>
+    		<h2>Data + Design</h2>
+    	</div>
+
+    	<h3>Currently at the University of Chicago studying Economics, Statistics, and Computer Science. I&rsquo;ve been a TA at <a href="http://girlswhocode.com">Girls Who Code</a> at Square in San Francisco. <a href="https://twitter.com/gwcsquared">Check out our work.</a></h3>
+
+    	<h3>You can watch me <a href="https://github.com/serifluous">code</a>,
     				 <a href="http://twitter.com/serifluous">tweet</a>,
     				 <a href="http://serifluous.tumblr.com">tumble</a>,
     				 <a href="http://instagram.com/serifluous">snap</a> &amp;
     				 <a href="http://pinterest.com/serifluous">pin</a>.
-    				 <br /><a href="mailto:li.sarah.y@gmail.com">Otherwise, send me a note &rarr;</a></h3>
+    				 <br /><a href="mailto:li.sarah.y@gmail.com">Otherwise, send me a note.</a></h3>
     </header>
+
+    <div id="project1" class="project">
+    	<h3><a href="https://github.com/serifluous/schelling-segregation">Schelling&rsquo;s Segregation Model</a></h3>
+    	<p><img src="schelling-plot.gif" alt="Schelling's Segregation Plot" /></p>
+    	<p>Thomas Schelling&rsquo;s Segregation Model shows that very small preferences for one&rsquo;s neighbors to be of a certain type (<em>e.g.</em>, race) can lead to widespread, or even total, segregation. To demonstrate, Schelling placed pennies and nickels on a grid and moved them around if they were &ldquo;unsatisfied&rdquo; by their neighbors. I&rsquo;ve simulated his model using R. <a href="https://github.com/serifluous/schelling-segregation">Read more on GitHub.</a></p>
+    </div>
+
+    <div id="project2" class="project">
+    	<h3><a href="http://coup.uchicago.edu">Marketing COUP at UChicago</a></h3>
+    	<p><img src="coup-examples.jpg" alt="COUP design samples" /></p>
+    	<p>As Marketing &amp; Web Chair for the <a href="http://coup.uchicago.edu/">Council on University Programming</a> at UChicago, I&rsquo;ve rebuilt our website and designed logos, T-shirts, and posters for our five annual evens. I&rsquo;m also working on a logo redesign for our organization.</p>
+    </div>
 </body>
 
 </html>
