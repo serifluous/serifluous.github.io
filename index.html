@@ -73,7 +73,7 @@
 			margin-right: auto;
 			position: relative;
 			top: 30px;
-			width: 400px;
+			max-width: 400px;
 		}
 
 		header h3 a:visited {
@@ -89,11 +89,11 @@
 			position: relative;
 			text-align: center;
 			top: 40px;
-			width: 430px;
+			max-width: 430px;
 		}
 
 		.project img {
-			width: 396px;
+			max-width: 396px;
 			height: 594px;
 		}
 
@@ -120,12 +120,27 @@
 			padding-right: 35px;
 			text-align: justify;
 		}
-		
+
 		@media screen and (max-width: 480px) {
 			header {
 				max-width: 480px;
 				width: 100%;
 			}
+
+			header h3 {
+				max-width: 400px;
+				width:100%;
+			}
+
+			.project {
+				max-width: 430px;
+				width: 100%;
+			}
+
+			/*.project img {
+				max-width: 396px;
+				width: 100%;
+			}*/
 
 			/*.project {
 				float: none;
