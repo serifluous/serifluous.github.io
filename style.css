@@ -141,37 +141,41 @@ h1#project-heading {
 
 .resume-content h1 {
 	border-bottom: 1px solid rgb(200,200,200);
-	font-family: Montserrat, Gotham, "Helvetica Neue", sans-serif;
-	font-size: 1.7rem;
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 2rem;
+	font-weight: normal;
 	margin-top: 50px;
 	padding-bottom: 15px;
 	text-align: center;
 }
 
 .resume-content ul {
-	font-family: "Gentium Book Basic", Georgia, serif;
-	font-size: 1rem;	
+	font-family: Montserrat, Gotham, "Helvetica Neue", sans-serif;
+	font-size: 0.9rem;
+	/*font-weight: bold;*/
+	/*letter-spacing: -0.03rem;	*/
 	list-style-type: none;
 	margin-left: -20px;
 }
 
 .resume-content li {
-	font-weight: bold;
 	margin-bottom: 20px;
 }
 
 #research li {
 	font-weight: normal;
-	font-style: italic;
 }
 
 .resume-description {
 	display: block;
+	font-family: "Gentium Book Basic", Georgia, serif;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: normal;
+	letter-spacing: 0rem;
 	line-height: 1.5rem;
 	margin-left: 40px;
-	margin-top: 7px;
+	margin-top: 10px;
 }
 
 @media print {
