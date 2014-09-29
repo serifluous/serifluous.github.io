@@ -216,11 +216,13 @@ h1#project-heading {
 	}
 
 	h1#project-heading {
-		background-color: rgb(160,55,55);
+		background-color: rgb(214,138,71);
 		border-bottom: 2px solid rgb(200,200,200);
 		border-top: 0;
 		color: rgb(242,241,241);
 		max-width: 420px;
+		padding-bottom: 15px;
+		padding-top: 15px;
 		width: 100%;
 	}
 
