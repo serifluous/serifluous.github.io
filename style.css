@@ -242,4 +242,12 @@ h1#project-heading {
 		max-width: 390px;
 		width: 100%;
 	}
+
+	.resume-content h1 {
+		margin-left: 20px;
+	}
+
+	.resume-content li {
+		margin-right: 10px;
+	}
 }
