@@ -140,8 +140,12 @@ h1#project-heading {
 }
 
 .resume-content h1 {
+	border-bottom: 1px solid rgb(200,200,200);
 	font-family: Montserrat, Gotham, "Helvetica Neue", sans-serif;
 	font-size: 1.7rem;
+	margin-top: 50px;
+	padding-bottom: 15px;
+	text-align: center;
 }
 
 .resume-content ul {
@@ -209,6 +213,7 @@ h1#project-heading {
 
 	h1#project-heading {
 		background-color: rgb(160,55,55);
+		border-top: 0;
 		color: rgb(242,241,241);
 		max-width: 420px;
 		width: 100%;
@@ -244,7 +249,11 @@ h1#project-heading {
 	}
 
 	.resume-content h1 {
-		margin-left: 10px;
+		background-color: rgb(160,55,55);
+		border-top: 0;
+		color: rgb(242,241,241);
+		margin-bottom: 30px;
+		padding-top: 15px;
 	}
 
 	.resume-content li {
