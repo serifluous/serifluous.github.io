@@ -10,6 +10,12 @@ body {
 	color: #666;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 h1, h2, h3 {
 	color: #333;
 }
@@ -70,11 +76,19 @@ a:active {
 h1.name {
 	font-size: 20px;
 	line-height: 32px;
+	margin: 0;
 }
 
 h1.name a {
 	color: #777;
 	text-decoration: none;
+	padding: 6px 10px;
+	border-radius: 4px;
+	margin-left: -10px;
+}
+
+h1.name a:hover {
+	background-color: #efefef;
 }
 
 .section {
@@ -104,11 +118,33 @@ h1.name a {
 
 ul.logos {
 	list-style-type: none;
+	margin: 0 -15px 0 -15px;
+	padding-left: 0;
 }
 
 ul.logos li {
-	display: block;
 	float: left;
+	margin: 0 15px 0 15px;
+	position: relative;
+	height: 125px;
+}
+
+ul.logos li img {
+	width: 125px;
+	height: 125px;
+}
+
+ul.logos li::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 127px;
+	height: 127px;
+	background: url('projects/clementine-onboarding/mask175_2x.png') 0 0 no-repeat;
+	background-size: 125px 125px;
 }
 
 
