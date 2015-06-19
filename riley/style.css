@@ -37,7 +37,7 @@ h3 {
 }
 
 p {
-	font-size: 30px;
+	font-size: 28px;
 	line-height: 46px;
 	margin-top: 0;
 }
@@ -113,7 +113,7 @@ ul.header-links li a {
   	color: #999;
 }
 
-h1.name a:hover, 
+h1.name a:hover,
 ul.header-links li a:hover {
 	color: #555;
 	background-color: #efefef;
@@ -156,15 +156,24 @@ ul.header-links li a:hover {
 	margin-bottom: 10px;
 }
 
-.section.image-background .container p {
+.section.image-background .container p, .section.image-background .container li {
 	font-size: 16px;
 	line-height: 26px;
 	color: #bbb;
+}
+
+.section.image-background .container li {
+	margin-bottom: 10px;
+}
+
+.section.image-background .container ul {
 	margin-bottom: 0;
+	margin-left: 0px;
 }
 
 .section.image-background.clementine-sketch {background-image: url('projects/clementine-onboarding/onboarding-sketch.JPG');}
 
+/* Decrease width */
 .container {
 	max-width: 900px;
 	margin: 0 auto;
