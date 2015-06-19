@@ -7,7 +7,7 @@ html, body {
 body {
 	background-color: #fcfcfc;
 	font-family: "Cabin", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-	color: #777;
+	color: #666;
 }
 
 h1, h2, h3 {
@@ -38,6 +38,25 @@ ul {
 	font-size: 24px;
 	line-height: 40px;
 	margin-left: 40px;
+}
+
+a:link {
+	color: #4A90E2;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #0F4583;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #CA403A;
+}
+
+a:active {
+	position: relative;
+	margin-top: 1px;
 }
 
 .header {
@@ -81,6 +100,15 @@ h1.name a {
 .title h1 {
 	letter-spacing: 1.3px;
 	line-height: 600px;
+}
+
+ul.logos {
+	list-style-type: none;
+}
+
+ul.logos li {
+	display: block;
+	float: left;
 }
 
 
