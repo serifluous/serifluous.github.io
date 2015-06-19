@@ -5,14 +5,13 @@ html, body {
 }
 
 body {
-	background-color: #fff;
+	background-color: #fcfcfc;
 	font-family: "Cabin", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	color: #777;
 }
 
 h1, h2, h3 {
 	color: #333;
-	font-weight: bold;
 }
 
 h1 {
@@ -35,19 +34,27 @@ p {
 	line-height: 46px;
 }
 
+ul {
+	font-size: 24px;
+	line-height: 40px;
+	margin-left: 40px;
+}
+
 .header {
-	height: 32px;
+	/*height: 32px;*/
 	padding-top: 14px;
 	padding-bottom: 14px;
 	width: 100%;
 	border-bottom: 1px solid #efefef;
 }
 
-.header .name {
+h1.name {
 	font-size: 20px;
-	font-size: bold;
-	color: #777;
 	line-height: 32px;
+}
+
+h1.name a {
+	color: #777;
 	text-decoration: none;
 }
 
@@ -65,11 +72,26 @@ p {
 	padding-left: 30px;
 	padding-right: 30px;
 }
-.section .container {
+
+.section {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
 .title h1 {
+	letter-spacing: 1.3px;
 	line-height: 600px;
+}
+
+
+/*
+PROJECT-SPECIFIC
+*/
+
+.clementine {
+	background-color: #F27D65;
+}
+
+.clementine h1 {
+	color: #fff;
 }
