@@ -18,6 +18,7 @@ body {
 
 h1, h2, h3 {
 	color: #333;
+	margin-top: 0;
 }
 
 h1 {
@@ -38,6 +39,7 @@ h3 {
 p {
 	font-size: 30px;
 	line-height: 46px;
+	margin-top: 0;
 }
 
 ol {
@@ -93,22 +95,55 @@ h1.name a:hover {
 
 .section {
 	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .section:nth-child(even) {
 	background-color: #f6f6f6;
 }
 
+.section.image-background {
+	min-height: 720px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	position: relative;
+}
+
+.section.image-background .container {
+	padding: 24px 30px 30px 30px;
+	background-color: rgba(0, 0, 0, 0.85);
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	max-width: 480px;
+}
+
+.section.image-background .container h2 {
+	font-size: 24px;
+	line-height: 36px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.section.image-background .container p {
+	font-size: 16px;
+	line-height: 26px;
+	color: #bbb;
+	margin-bottom: 0;
+}
+
+.section.image-background.clementine-sketch {background-image: url('projects/clementine-onboarding/onboarding-sketch.JPG');}
+
 .container {
 	max-width: 900px;
 	margin: 0 auto;
 	padding-left: 30px;
 	padding-right: 30px;
-}
-
-.section {
-	padding-top: 50px;
-	padding-bottom: 50px;
 }
 
 .title h1 {
