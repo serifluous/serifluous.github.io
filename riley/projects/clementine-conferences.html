@@ -37,139 +37,118 @@
 		<div class="section">
 			<div class="container">
 				<h2>Goal</h2>
-				<p>Revamping Clementine&rsquo;s iconography started out as a simple project to soften corners and unify stroke widths on the app&rsquo;s tab bar:</p>
+				<p>The goal of redesigning the conference call flow (the &ldquo;hero&rdquo; feature of Clementine) was to build and sustain trust with customers throughout the entire call experience.</p>
 
-				<p><img src="clementine-iconography/old-tabs.png" alt="Old Clementine tab bar" /></p>
-				<p>However, I knew that simply updating the tab bar wouldn&rsquo;t be enough. We needed a complete overhaul of our iconography, and I chose three words I wanted to communicate that I believe reflect Clementine&rsquo;s product and brand: <em>trustworthy</em>, <em>friendly</em>, and <em>secure</em>.</p>
+				<p>If they&rsquo;ve tried different conference call apps, customers are aware of and likely accustomed to other apps that dial a conference line using a customer&rsquo;s personal phone number. However, one of Clementine&rsquo;s value propositions is that customers receive their own business line to keep their work and personal lives separate.</p>
 
-				<p>Several product sprints had resulted in bloat, with icons of different styles cobbled together each time a new feature required them. A new icon set could bring visual consistency throughout the entire app and promote a greater sense of calm and reassurance in our customers.</p>
+				<p>Prior to the redesign, Clementine&rsquo;s conference call screen looked too similar to the iOS phone UI. Customers complained that they weren&rsquo;t sure if calls were being made through Clementine or through their own phone, especially if they were distracted while using the app.</p>
 
-				<p>Keeping this in mind, I aimed for an icon set style that would be personable but not too blithe.</p>
+				<p>I planned to:</p>
+
+				<ol>
+					<li>Create a seamless Clementine-branded conference call experience that</li>
+					<li>Would be flexible when incorporating additional call features we had on the horizon, such as call transferring, a dial pad, and conference rescheduling.</li>
+				</ol>
 			</div>
 		</div>
 
 		<div class="section">
 			<div class="container">
-				<h2>&ldquo;Competitor&rdquo; Analysis</h2>
-				<p>Typically, at the beginning of a project I&rsquo;d take a look at products in the same space as Clementine and use their designs as a launch point to figure out what other enterprise products are doing well (or not).</p>
+				<h2>Competitor Analysis</h2>
+				<p>The landscape of enterprise communication is far-reaching. There are apps that only do text-based communication (<em>e.g.</em>, Slack, Pie), those that do text and voice (<em>e.g.</em>, Convoi), and those that do voice through another product (<em>e.g.</em>, UberConference, Hall).</p>
 
-				<p>However, given that the visual tone of enterprise design is traditionally unenthusiastic, I took a broader view of the landscape. I looked, especially, at products that:</p>
-
-				<ol>
-					<li>Were used for communication or productivity.</li>
-					<li>Relied on icons to represent a wide range of concepts and actions.</li>
-				</ol>
+				<p>I looked mainly at enterprise apps to get a sense how other products are handling phone calls, especially with multiple people on the line. I also took a look at more consumer-focused communication apps that might be handling a larger scale of customers.</p>
 
 <!-- Add links to apps -->
 				<ul class="logos group">
 					<li>
-						<img src="logos/logo-airbnb.png" alt="Airbnb logo" />
-						<div class="caption">Airbnb</div>
+						<img src="logos/logo-convoi.png" alt="Convoi logo" />
+						<div class="caption">Convoi</div>
 					</li>
 					<li>
-						<img src="logos/logo-dropbox.png" alt="Dropbox logo" />
-						<div class="caption">Dropbox</div>
+						<img src="logos/logo-hangouts.jpeg" alt="Google Hangouts logo" />
+						<div class="caption">Hangouts</div>
 					</li>
 					<li>
-						<img src="logos/logo-foursquare.jpeg" alt="Foursquare logo" />
-						<div class="caption">Foursquare + Swarm</div>
+						<img src="logos/logo-messenger.jpeg" alt="Facebook Messenger logo" />
+						<div class="caption">Messenger</div>
 					</li>
 					<li>
-						<img src="logos/logo-path.jpeg" alt="Path logo" />
-						<div class="caption">Path</div>
+						<img src="logos/logo-speakeasy.jpeg" alt="Speakeasy logo" />
+						<div class="caption">Speakeasy</div>
 					</li>
 					<li>
-						<img src="logos/logo-slack.png" alt="Slack logo" />
-						<div class="caption">Slack</div>
+						<img src="logos/logo-uberconference.png" alt="UberConference logo" />
+						<div class="caption">UberConference</div>
 					</li>
 					<li>
-						<img src="logos/logo-sunrise.jpeg" alt="Sunrise logo" />
-						<div class="caption">Sunrise</div>
+						<img src="logos/logo-viber.png" alt="Viber logo" />
+						<div class="caption">Viber</div>
 					</li>
 				</ul>
 
-				<p>I also <a href="https://dribbble.com/serifluous/buckets/269777-Icons">bucketed a few icon sets on Dribbble for inspiration</a>.</p>
+				<p>General trends I found were that</p>
+
+				<ol>
+					<li>There&rsquo;s a very limited number of tasks you can perform when you&rsquo;re in a call. Many apps don&rsquo;t let you return to the normal app UI.</li>
+					<li>Not many apps made it clear who was in the call yet and who wasn&rsquo;t.</li>
+					<li>The ways in which you could start a conference call varied, but the majority of apps required you to start from a preexisting group, rather than with an ad hoc group.</li>
+				</ol>
 			</div>
 		</div>
 
-		<div class="section image-background iconography-sketch">
+		<div class="section image-background conferences-sketch">
 			<div class="container">
 				<h2>Sketching</h2>
-				<p>Sketching icons with pen and paper allowed me to work more quickly in exploring ideas than if I had dived straight into vectors in Sketch.</p>
-
-				<p>A few icons I had trouble with:</p>
-
-				<ul>
-					<li>Copy contact info to clipboard&mdash;<em>how do I distinguish this from the share icon?</em></li>
-					<li>Conferences&mdash;<em>the team and I were still deciding on what constituted a conference (Is it scheduled? Is it a multi-person call?) and how it differed from a normal call.</em></li>
-					<li>Directory &amp; Groups&mdash;<em>How do I make these as gender-neutral or as representative of all genders as possible?</em></li>
-					<li>Invite via email/contacts/text&mdash;<em>how do I distinguish this from our normal email, contacts, and text message icons?</em>
-				</ul>
+				<p>Blah</p>
 			</div>
 		</div>
 
 		<div class="section">
 			<div class="container">
-				<h2>Mockups</h2>
-				<p><img src="clementine-iconography/iconography-sketchapp-1.png" alt="Sketch screenshot of icons on chat screen" /></p>
+				<h2>Mockups, Round 1</h2>
+				<!-- <p><img src="clementine-iconography/iconography-sketchapp-1.png" alt="Sketch screenshot of icons on chat screen" /></p> -->
 
-				<p>After some vector work in Sketch, I assembled the redesigned icons into their appropriate screens by overlaying them on app screenshots. This made it easy to get feedback from the team since everything was contextualized with real content. The mockups made it clear exactly where the icons and app needed visual and functional improvement.</p>
-
-				<p>For example, the conference scheduling screen had icons in almost every entry field. This cluttered a screen that already forced a large amount of cognitive load on the user because of the multiple form actions required. Moreover, the icons didn&rsquo;t add much utility that the text labels couldn&rsquo;t already provide.</p>
-
-<!-- Images needs styling/fixing + add images if they're still on my dead macbook :( -->
-
-				<!-- <p><img src="clementine-iconography/" alt="Clementine conference scheduling screen comparison with and without icons" /></p> -->
-
-				<p>I also iterated a great deal on icons for groups, empty states, and invite buttons since they were challenging in terms of inclusion, tone, and increasing motivation toward an action (respectively). I focused, especially, on using the right visual tone, while keeping icons as simple, consistent, and meaningful as possible.</p>
-
-				<!-- <p><img src="clementine-iconography/" alt="Clementine group icon evolution" /></p> -->
-
-				<!-- <p><img src="clementine-iconography/" alt="Clementine empty state evolution" /></p> -->
-
-				<!-- <p><img src="clementine-iconography/" alt="Clementine invite button evolution" /></p> -->
+				<p>Blah</p>
 			</div>
 		</div>
 
 		<div class="section">
 			<div class="container">
-				<h2>Prototyping</h2>
-				<p>Prototyping was minimal since icons within the app are pretty static. I did do some quick animations in Pixate for some features (<em>e.g.</em>, inviting contacts, call quality ratings,  onboarding), but mostly because I was designing them simultaneously with the icon redesign.</p>
-
-				<p>Here&rsquo;s an example animation for inviting contacts:</p>
-<!-- Image needs styling -->
-				<p><img src="clementine-iconography/invite-email.gif" alt="Animation of contact being invited to Clementine via email" /></p>
+				<h2>Prototyping, Round 1</h2>
+				<p>blah</p>
 
 			</div>
 		</div>
 
-		<div class="section image-background iconography-final">
+		<div class="section image-background conferences-testing">
+			<div class="container">
+				<h2>User Testing</h2>
+				<!-- <p><img src="clementine-iconography/iconography-sketchapp-1.png" alt="Sketch screenshot of icons on chat screen" /></p> -->
+
+				<p>Blah</p>
+			</div>
+		</div>
+
+		<div class="section">
+			<div class="container">
+				<h2>Mockups &amp; Prototyping, Round 2</h2>
+				<p>blah</p>
+
+			</div>
+		</div>
+
+		<div class="section">
 			<div class="container">
 				<h2>Final Design</h2>
-				<p>The final icon set used only Clementine&rsquo;s primary orange and grays (except in the rare cases of red delete buttons). The app&rsquo;s previous icons ventured into our secondary color scheme and relied too much on those colors to provide visual contrast with little meaning inherent to the icons themselves.</p>
-				<p>I kept stroke widths and corner radii as uniform as possible across all icons on all screens to keep visual consistency throughout the app. As I was redesigning the icons, other members of the Clementine team were building out a universal navigation menu (which I also created icons for), and it was great seeing consistency championed in all aspects of the app.</p>
-<!-- Link to desktop app project page -->
-				<p>In total, I created a set of over 100 icons, including even more for the desktop app.</p>
+				<p>Blah</p>
 			</div>
 		</div>
 
-		<div class="section title">
+		<div class="section">
 			<div class="container">
 				<h2>Next Steps &amp; Lessons Learned</h2>
-				<p>We heard back from our customers, who were overwhelmingly positive in their feedback. They said that the latest Clementine release with the new icons completely changed the look of the app (for good), which was exactly what I was going for.</p>
-
-				<p>Along the way, I also</p>
-
-				<ul>
-					<li>Created a new file organization in Dropbox for design assets, screenshots, and specs to help our engineers build faster. They love it, and it&rsquo;s also improved the time it takes for the design team to find and share assets. A little organizational work goes a long way.</li>
-					<li>Effectively made the three brand words I relied on at the start of the project (trustworthy, friendly, secure) a key part of our product. These words were the way we began presenting our product to Clementine&rsquo;s different audiences.</li>
-				</ul>
-
-				<p>Starting out, I wasn&rsquo;t experienced at all with creating icons, or even working much with vectors. There are definitely things I would change with how I structured the icons&rsquo; strokes (Is it a centered stroke? Inside? Outside?) and making layer names as clean and specific as possible. Things like this come back to haunt me when we need to edit and use the icons for other purposes (like an icon background for onboarding).</p>
-
-<!-- ^^ Link to onboarding -->
-
-				<p>Now that the Clementine team&rsquo;s settled on the differences between conferences and calls, and the information and feature architecture of the app has changed as a result, the icons related to those features could use some additional care.
+				<p>Blah</p>
 			</div>
 		</div>
 

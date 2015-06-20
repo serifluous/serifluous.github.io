@@ -180,6 +180,14 @@ ul.header-links li a:hover {
 	background-image: url('projects/clementine-onboarding/onboarding-sketch.JPG');
 }
 
+.section.image-background.conferences-sketch {
+	background-image: url('projects/clementine-conferences/conferences-sketch.JPG');
+}
+
+.section.image-background.conferences-testing {
+	background-image: url('projects/clementine-conferences/user-testing.png');
+}
+
 .section.image-background.iconography-sketch {
 	background-image: url('projects/clementine-iconography/iconography-sketch.JPG');
 }
