@@ -176,7 +176,17 @@ ul.header-links li a:hover {
 	margin-left: 0px;
 }
 
-.section.image-background.clementine-sketch {background-image: url('projects/clementine-onboarding/onboarding-sketch.JPG');}
+.section.image-background.clementine-sketch {
+	background-image: url('projects/clementine-onboarding/onboarding-sketch.JPG');
+}
+
+.section.image-background.iconography-sketch {
+	background-image: url('projects/clementine-iconography/iconography-sketch.JPG');
+}
+
+.section.image-background.iconography-final {
+	background-image: url('projects/clementine-iconography/iconography.png');
+}
 
 /* Decrease width */
 .container {
