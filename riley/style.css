@@ -196,13 +196,16 @@ ul.header-links li a:hover {
 	background-image: url('projects/clementine-desktop/desktop-content.JPG');
 }
 
-
 .section.image-background.iconography-sketch {
 	background-image: url('projects/clementine-iconography/iconography-sketch.JPG');
 }
 
 .section.image-background.iconography-final {
 	background-image: url('projects/clementine-iconography/iconography.png');
+}
+
+.section.image-background.water-sketch {
+	background-image: url('projects/water/water-sketch.JPG');
 }
 
 /* Decrease width */
@@ -275,4 +278,12 @@ PROJECT-SPECIFIC
 
 .clementine h1 {
 	color: #fff;
+}
+
+.water {
+	background-color: #86B2E6;
+}
+
+.water h1 {
+	color: #355271;
 }
