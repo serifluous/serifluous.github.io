@@ -188,6 +188,15 @@ ul.header-links li a:hover {
 	background-image: url('projects/clementine-conferences/user-testing.png');
 }
 
+.section.image-background.desktop-sketch {
+	background-image: url('projects/clementine-desktop/desktop-sketch.JPG');
+}
+
+.section.image-background.desktop-content {
+	background-image: url('projects/clementine-desktop/desktop-content.JPG');
+}
+
+
 .section.image-background.iconography-sketch {
 	background-image: url('projects/clementine-iconography/iconography-sketch.JPG');
 }
@@ -236,8 +245,12 @@ ul.logos li::after {
 	z-index: 1;
 	width: 127px;
 	height: 127px;
-	background: url('projects/clementine-onboarding/mask175_2x.png') 0 0 no-repeat;
+	background: url('projects/logos/mask175_2x.png') 0 0 no-repeat;
 	background-size: 125px 125px;
+}
+
+ul.logos-dark li::after {
+	background-color:;
 }
 
 .caption {
