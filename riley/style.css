@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3 {
-	color: #333;
+	color: #555;
 	margin-top: 0;
 }
 
@@ -58,22 +58,25 @@ p {
 }
 
 a:link {
-	color: #4A90E2;
+	color: #CA403A;
 	text-decoration: none;
 }
 
 a:visited {
-	color: #0F4583;
+	/*color: #8E3330;*/
+	color: #CA403A;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #CA403A;
+	border-bottom: 2px solid #FC514A;
+	color: #FC514A;
+	padding-bottom: 2px;
 }
 
 a:active {
 	position: relative;
-	margin-top: 1px;
+	top: 1px;
 }
 
 .header {
@@ -83,6 +86,125 @@ a:active {
 	width: 100%;
 	border-bottom: 1px solid #efefef;
 }
+
+/*
+HOME
+*/
+
+.home h1, .home h2 {
+	text-align: center;
+}
+
+.home h1 {
+	margin-top: 150px;
+}
+
+ul#social {
+	list-style-type: none;
+	margin: 100px 0 30px 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul#social li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 0;
+}
+
+ul#social li a:hover {
+	border: 0;
+}
+
+/*
+PORTFOLIO
+*/
+
+.content-portfolio {
+	margin: 0 auto;
+	width: 1100px;
+}
+
+.content-portfolio h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.portfolio {
+	float: left;
+	width: 45%;
+	margin: 80px 2.5%;
+}
+
+.portfolio-image {
+	height: 350px;
+	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+/*.portfolio h2:hover {
+	background-color: rgba(80,80,80,0.85);
+	border-radius: 4px;
+	clear: left;
+	color: #444;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+}*/
+
+.portfolio-image p {
+	color: #444;
+	font-style: italic;
+	position: relative;
+	top: 150px;
+	text-align: center;
+}
+
+.portfolio-onboarding {
+	background-image: url('projects/clementine-onboarding/onboarding-portfolio.png');
+}
+
+
+.portfolio-iconography {
+	background-image: url('projects/clementine-iconography/iconography.png');
+}
+
+.portfolio-conferences {
+	/*background-image: url('projects/clementine-conferences/conferences-sketch.JPG');*/
+	background-color: #F27D65;
+}
+
+.portfolio-desktop {
+	/*background-image: url('projects/clementine-desktop/desktop-sketch.JPG');*/
+	background-color: #F27D65;
+}
+
+.portfolio-water {
+	background-color: #86B2E6;
+}
+
+@media screen and (max-width: 1100px) {
+	.content-portfolio {
+		float: left;
+		width: 95%;
+	}
+
+	.portfolio {
+		width: 100%;
+	}
+
+}
+
+/*
+WORK
+*/
 
 h1.name {
 	font-size: 20px;
@@ -208,6 +330,10 @@ ul.header-links li a:hover {
 	background-image: url('projects/water/water-sketch.JPG');
 }
 
+p.pimage {
+	text-align: center;
+}
+
 /* Decrease width */
 .container {
 	max-width: 900px;
@@ -218,7 +344,36 @@ ul.header-links li a:hover {
 
 .title h1 {
 	letter-spacing: 1.3px;
-	line-height: 600px;
+	text-align: center;
+	margin-top: 250px;
+	margin-bottom: 200px;
+}
+
+/*.clementine p:first-of-type {
+	color: #585555;
+	font-size: 20px;
+	line-height: 36px;
+	margin-bottom: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 560px;
+} */
+
+.phone {
+	background-image: url("projects/logos/phone-frame.png");
+	height: 628px;
+	width: 318px;
+	margin-bottom: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.phone img {
+	display: block;
+	position: relative;
+	top: 81px;
+	left: 31px;
 }
 
 ul.logos {
