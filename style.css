@@ -647,6 +647,10 @@ MEDIA QUERIES
 
 	/* PROJECTS */
 
+	.clementine .container {
+		padding: 0;
+	}
+
 	.phone {
 		background: none;
 		border: 3px solid white;
