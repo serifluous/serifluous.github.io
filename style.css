@@ -184,7 +184,6 @@ PORTFOLIO
 	height: 10px;
 	width: 100%;
 	border-top: 3px solid #B8726F;
-	margin-bottom: 0;
 	margin-top: 15px;
 }
 
@@ -210,6 +209,14 @@ PORTFOLIO
 	margin-top: -10px;
 }
 
+/*.portfolio-image:hover {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+	border: 3px solid rgba(184,114,101,0.8);
+	border-top: none;
+}
+*/
 /*.portfolio h2:hover {
 	background-color: rgba(80,80,80,0.85);
 	border-radius: 4px;
@@ -617,7 +624,7 @@ MEDIA QUERIES
 
 	ul.header-links {
 		float: none;
-		margin: 0 auto 20px auto;
+		margin: 10px auto 20px auto;
 		height: 10px;
 		padding: 0;
 		text-align: center;
