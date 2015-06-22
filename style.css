@@ -139,13 +139,13 @@ PORTFOLIO
 .line {
 	height: 10px;
 	width: 100%;
-	border-top: 2px solid #CA403A;
+	border-top: 3px solid #B8726F;
 	margin-bottom: 0;
-	margin-top: -5px;
+	margin-top: 15px;
 }
 
 .soon .line {
-	border-top: 2px solid #444;
+	border-top: 3px solid #615F5E;
 }
 
 .portfolio {
@@ -486,6 +486,28 @@ PROJECT-SPECIFIC
 MEDIA QUERIES
 */
 
+@media print {
+	ul.header-links {
+		display: none;
+	}
+
+	.resume h3 {
+		font-size: 1.5em;
+		line-height: 1em;
+		margin-top: 30px;
+	}
+
+	.resume li {
+		font-size: 0.6em;
+		line-height: 1.5em;
+		margin-bottom: 20px;
+	}
+
+	.resume-description {
+		margin-left: 20px;
+	}
+}
+
 @media screen and (max-width: 700px) {
 	.home h1 {
 		font-size: 3em;
@@ -504,6 +526,34 @@ MEDIA QUERIES
 	ul#social li {
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+
+	/*RESUME*/
+
+	.resume h3 {
+		border-bottom: 3px solid #555;
+		font-size: 1.8em;
+		line-height: 2em;
+		margin-top: 30px;
+		padding-bottom: 10px;
+		text-align: center;
+	}
+
+	.resume li {
+		font-size: 0.9em;
+		line-height: 2em;
+		margin-top: 60px;
+		margin-bottom: 80px;
+		margin-left: -40px;
+		text-align: center;
+	}
+
+	.resume-description {
+		font-size: 0.85em;
+		line-height: 1.7em;
+		margin: 20px auto 0 auto;
+		text-align: left;
+		width: 90%;
 	}
 }
 
@@ -535,8 +585,19 @@ MEDIA QUERIES
 		margin-right: 5px;
 	}
 
+	/*PORTFOLIO*/
+
+	.portfolio {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
 	.portfolio h2 {
 		font-size: 1.5em;
+	}
+
+	.line {
+		margin-top: 0px;
 	}
 
 }
