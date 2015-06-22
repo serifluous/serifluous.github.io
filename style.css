@@ -652,7 +652,7 @@ MEDIA QUERIES
 		border: 3px solid white;
 		border-radius: 45px;
 		height: 570px;
-		width: 90%;
+		width: 300px;
 		margin: 0 auto 100px auto;
 	}
 
@@ -661,7 +661,7 @@ MEDIA QUERIES
 		border-radius: 3px;
 		margin: 70px auto 0 auto;
 		position: inherit;
-		width: 80%;
+		width: 230px;
 	}
 
 }
