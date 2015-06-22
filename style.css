@@ -651,12 +651,16 @@ MEDIA QUERIES
 		background: none;
 		border: 3px solid white;
 		border-radius: 45px;
-		/*margin-top: -100px;*/
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.phone img {
 		border: 2px solid #444;
 		border-radius: 3px;
+		margin: 0 auto;
+		float: left;
+		width: 80%;
 	}
 
 }
