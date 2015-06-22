@@ -207,18 +207,6 @@ PORTFOLIO
 	background-color: #86B2E6;
 }
 
-@media screen and (max-width: 1100px) {
-	.content-portfolio {
-		float: left;
-		width: 95%;
-	}
-
-	.portfolio {
-		width: 100%;
-	}
-
-}
-
 /*
 RESUME
 */
@@ -509,17 +497,19 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 1100px) {
+	.content-portfolio {
+		float: left;
+		width: 95%;
+	}
+
+	.portfolio {
+		width: 100%;
+	}
+
 	.section h1 {
 		font-size: 3em;
+		margin-bottom: 60px;
 		margin-top: 40px;
-	}
-
-	.phone {
-		margin-left: 0px;
-	}
-
-	p.pimage img {
-		width: 90%;
 	}
 }
 
