@@ -759,7 +759,20 @@ MEDIA QUERIES
 
 @media screen and (max-width: 350px) {
 
-	ul.logos li:nth-child(odd) {
-		margin-left: 0;
+	ul.logos {
+		width: 260px;
+	}
+
+	ul.logos li {
+		width: 100px;
+	}
+
+	ul.logos li img {
+		width: 100px;
+		height: 100px;
+	}
+
+	ul.logos li::after {
+		background-size: 100px 100px;
 	}
 }
