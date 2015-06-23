@@ -63,7 +63,6 @@ a:link {
 }
 
 a:visited {
-	/*color: #8E3330;*/
 	color: #CA403A;
 	text-decoration: none;
 }
@@ -84,7 +83,6 @@ HEADER
 */
 
 .header {
-	/*height: 32px;*/
 	padding-top: 14px;
 	padding-bottom: 14px;
 	width: 100%;
@@ -143,14 +141,14 @@ HOME
 	margin-top: 150px;
 }
 
-ul#social {
+ul#social, .footer ul {
 	list-style-type: none;
 	margin: 100px 0 30px 0;
 	padding: 0;
 	text-align: center;
 }
 
-ul#social li {
+ul#social li, .footer li {
 	display: inline-block;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -209,24 +207,6 @@ PORTFOLIO
 	margin-top: -10px;
 }
 
-/*.portfolio-image:hover {
-    box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-	border: 3px solid rgba(184,114,101,0.8);
-	border-top: none;
-}
-*/
-/*.portfolio h2:hover {
-	background-color: rgba(80,80,80,0.85);
-	border-radius: 4px;
-	clear: left;
-	color: #444;
-	display: inline-block;
-	margin: 0 auto;
-	text-align: center;
-}*/
-
 .portfolio-image p {
 	color: #444;
 	font-style: italic;
@@ -254,8 +234,20 @@ PORTFOLIO
 	background-color: #F27D65;
 }
 
+.portfolio-illustrations {
+	background-color: #F10039;
+}
+
 .portfolio-water {
 	background-color: #86B2E6;
+}
+
+.portfolio-coup {
+	background-color: #E60012;
+}
+
+.portfolio-illustrations p, .portfolio-coup p {
+	color: #eee;
 }
 
 /*
@@ -391,17 +383,6 @@ p.pimage {
 	margin-bottom: 200px;
 }
 
-/*.clementine p:first-of-type {
-	color: #585555;
-	font-size: 20px;
-	line-height: 36px;
-	margin-bottom: 250px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	width: 560px;
-} */
-
 .phone {
 	background-image: url("projects/logos/phone-frame.png");
 	height: 628px;
@@ -450,10 +431,6 @@ ul.logos li::after {
 	background-size: 125px 125px;
 }
 
-ul.logos-dark li::after {
-	background-color:;
-}
-
 .caption {
 	font-size: 14px;
 	line-height: 22px;
@@ -487,6 +464,46 @@ PROJECT-SPECIFIC
 }
 
 /*
+FOOTER
+*/
+
+.footer {
+	background-color: #333;
+	clear: both;
+	margin-bottom: -50px;
+	padding: 50px 0 20px 0;
+	width: 100%;
+}
+
+.footer ul {
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	/*line-height: 1.8em;*/
+	margin: 0;
+}
+
+.footer p {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.footer a:link, .footer a:visited {
+	color: #D4CDCC;
+}
+
+.footer a:hover {
+	color: #FC514A;
+}
+
+.footer p a:hover {
+	border: 0;
+}
+
+.footer ul#social {
+	margin-top: 30px;
+}
+
+/*
 MEDIA QUERIES
 */
 
@@ -509,6 +526,10 @@ MEDIA QUERIES
 
 	.resume-description {
 		margin-left: 20px;
+	}
+
+	.footer {
+		display: none;
 	}
 }
 
@@ -552,12 +573,14 @@ MEDIA QUERIES
 		margin-top: 0;
 	}
 
-/*.section.image-background .container {
-	padding: 24px 30px 30px 30px;
-	background-color: rgba(0, 0, 0, 0.85);
-	position: relative;
-	max-width: 480px;
-}*/
+	ul.logos {
+		margin: 0 auto;
+		width: 475px;
+	}
+
+	ul.logos li:nth-child(4) {
+		clear: left;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -580,7 +603,7 @@ MEDIA QUERIES
 		margin-right: 20px;
 	}
 
-	/*RESUME*/
+	/* RESUME */
 
 	.resume h3 {
 		border-bottom: 3px solid #555;
@@ -607,6 +630,22 @@ MEDIA QUERIES
 		text-align: left;
 		width: 95%;
 	}
+
+	/* PROJECTS */
+
+	.image-background {
+		padding: 0;
+	}
+
+	.section.image-background .container {
+	background-color: rgba(0, 0, 0, 0.8);
+	bottom: 0;
+	left: 0;
+	width: 83%;
+	max-width: none;
+	vertical-align: bottom;
+	}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -673,6 +712,23 @@ MEDIA QUERIES
 		margin: 70px auto 0 auto;
 		position: inherit;
 		width: 230px;
+	}
+
+	ul.logos {
+		width: 310px;
+	}
+
+	ul.logos li:nth-child(odd) {
+		clear: left;
+	}
+
+	ul.logos li:nth-child(4) {
+		clear: none;
+	}
+
+	.section p, .section ul, .section ol {
+		font-size: 1.2em;
+		line-height: 1.75em;
 	}
 
 }
