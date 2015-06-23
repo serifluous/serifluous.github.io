@@ -455,6 +455,14 @@ PROJECT-SPECIFIC
 	color: #fff;
 }
 
+.title-iconography h1 {
+	margin-bottom: 60px;
+}
+
+.title-iconography p {
+	margin-bottom: 150px;
+}
+
 .water {
 	background-color: #86B2E6;
 }
@@ -553,20 +561,12 @@ MEDIA QUERIES
 		margin-top: 40px;
 	}
 
-	.section h2 {
-		font-size: 2.3em;
-		text-align: center;
+	.title-iconography p {
+		margin-bottom: 60px;
 	}
 
-	.section p {
-		font-size: 1.3em;
-		line-height: 1.9em;
-	}
-
-	.section ol, .section ul {
-		font-size: 1.3em;
-		line-height: 1.8em;
-		margin-left: 0;
+	.title-iconography p img {
+		width: 50%;
 	}
 
 	.phone {
@@ -646,6 +646,22 @@ MEDIA QUERIES
 	vertical-align: bottom;
 	}
 
+	.section h2 {
+		font-size: 2.3em;
+		text-align: center;
+	}
+
+	.section p {
+		font-size: 1.3em;
+		line-height: 1.9em;
+	}
+
+	.section ol, .section ul {
+		font-size: 1.3em;
+		line-height: 1.8em;
+		margin-left: 0;
+	}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -692,6 +708,10 @@ MEDIA QUERIES
 	}
 
 	/* PROJECTS */
+
+	.title-iconography p img {
+		width: 70%;
+	}
 
 	.clementine .container {
 		padding: 0;
