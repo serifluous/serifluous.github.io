@@ -356,10 +356,6 @@ WORK
 	background-image: url('projects/clementine-iconography/iconography-sketch.JPG');
 }
 
-.section.image-background.iconography-final {
-	background-image: url('projects/clementine-iconography/iconography.png');
-}
-
 .section.image-background.water-sketch {
 	background-image: url('projects/water/water-sketch.JPG');
 }
@@ -641,7 +637,7 @@ MEDIA QUERIES
 	background-color: rgba(0, 0, 0, 0.8);
 	bottom: 0;
 	left: 0;
-	width: 81%;
+	width: 81.5%;
 	max-width: none;
 	vertical-align: bottom;
 	}
