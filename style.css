@@ -127,6 +127,7 @@ h1.name a:hover,
 ul.header-links li a:hover {
 	color: #555;
 	background-color: #efefef;
+	border: 0;
 }
 
 /*
