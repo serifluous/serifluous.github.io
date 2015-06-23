@@ -662,6 +662,10 @@ MEDIA QUERIES
 		margin-left: 0;
 	}
 
+	ul.logos {
+		margin: 0 auto;
+	}
+
 }
 
 @media screen and (max-width: 500px) {
@@ -751,4 +755,11 @@ MEDIA QUERIES
 		line-height: 1.75em;
 	}
 
+}
+
+@media screen and (max-width: 350px) {
+
+	ul.logos li:nth-child(odd) {
+		margin-left: 0;
+	}
 }
