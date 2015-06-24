@@ -289,7 +289,7 @@ WORK
 }
 
 .section.image-background {
-	min-height: 830px;
+	min-height: 820px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
