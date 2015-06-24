@@ -278,6 +278,32 @@ RESUME
 WORK
 */
 
+p.arrow {
+	line-height: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+p.arrow a:hover {
+	border: 0;
+}
+
+p.larr {
+	float: left;
+}
+
+p.larr .arrow-text {
+	margin-left: 20px;
+}
+
+p.rarr {
+	float: right;
+}
+
+p.rarr .arrow-text {
+	margin-right: 20px;
+}
+
 .section {
 	width: 100%;
 	padding-top: 50px;
@@ -476,7 +502,7 @@ FOOTER
 .footer {
 	background-color: #333;
 	clear: both;
-	margin-top: 100px;
+	margin-top: 80px;
 	margin-bottom: -50px;
 	padding: 50px 0 20px 0;
 	width: 100%;
@@ -754,6 +780,14 @@ MEDIA QUERIES
 	.section p, .section ul, .section ol {
 		font-size: 1.2em;
 		line-height: 1.75em;
+	}
+
+	p.arrow {
+		font-size: 1.1em;
+	}
+
+	p.arrow .arrow-text {
+		margin: 10px;
 	}
 
 }
