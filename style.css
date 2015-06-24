@@ -289,7 +289,7 @@ WORK
 }
 
 .section.image-background {
-	min-height: 720px;
+	min-height: 830px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -638,11 +638,13 @@ MEDIA QUERIES
 
 	.section.image-background .container {
 	background-color: rgba(0, 0, 0, 0.8);
-	bottom: 0;
-	left: 0;
+	position: relative;
 	width: 81.5%;
+	left: auto;
+	right: auto;
+	top: 50px;
 	max-width: none;
-	vertical-align: bottom;
+	/*vertical-align: bottom;*/
 	}
 
 	.section h2 {
