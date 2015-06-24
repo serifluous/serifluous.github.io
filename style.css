@@ -170,30 +170,33 @@ PORTFOLIO
 }
 
 .content-portfolio h2 {
-	font-size: 30px;
-	margin-bottom: 0;
+	border-bottom: 1px solid #ccc;
+	font-size: 26px;
+	font-variant: small-caps;
+	font-weight: normal;
+	letter-spacing: 2px;
+	line-height: 44px;
+	margin-bottom: 30px;
 	text-align: center;
+	text-transform: lowercase;
+}
+
+.content-portfolio h2:hover {
+	border-bottom: 1px solid #FC514A;
 }
 
 .content-portfolio h2 a:hover {
 	border: 0;
 }
 
-.line {
-	height: 10px;
-	width: 100%;
-	border-top: 3px solid #B8726F;
-	margin-top: 15px;
-}
-
-.soon .line {
-	border-top: 3px solid #615F5E;
+.soon h2:hover {
+	border-bottom: 1px solid #ccc;
 }
 
 .portfolio {
 	float: left;
 	width: 45%;
-	margin: 80px 2.5%;
+	margin: 60px 2.5%;
 }
 
 .portfolio-image {
@@ -226,25 +229,23 @@ PORTFOLIO
 }
 
 .portfolio-conferences {
-	/*background-image: url('projects/clementine-conferences/conferences-sketch.JPG');*/
-	background-color: #F27D65;
+	background-image: url('projects/clementine-conferences/conferences-final.png');
 }
 
 .portfolio-desktop {
-	/*background-image: url('projects/clementine-desktop/desktop-sketch.JPG');*/
-	background-color: #F27D65;
+	background-image: url('projects/clementine-desktop/desktop-whiteboard-2.JPG');
 }
 
 .portfolio-illustrations {
-	background-color: #F10039;
+	background-image: url('projects/illustrations/femmes-stickers.png');
 }
 
 .portfolio-water {
-	background-color: #86B2E6;
+	background-image: url('projects/water/water-sketch.JPG');
 }
 
 .portfolio-coup {
-	background-color: #E60012;
+	background-image: url('projects/coup/coup-summer-breeze.jpg');
 }
 
 .portfolio-illustrations p, .portfolio-coup p {
@@ -475,6 +476,7 @@ FOOTER
 .footer {
 	background-color: #333;
 	clear: both;
+	margin-top: 100px;
 	margin-bottom: -50px;
 	padding: 50px 0 20px 0;
 	width: 100%;
