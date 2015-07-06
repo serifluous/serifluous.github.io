@@ -170,23 +170,29 @@ PORTFOLIO
 }
 
 .content-portfolio h2 {
-	border-bottom: 1px solid #ccc;
-	font-size: 26px;
-	font-variant: small-caps;
+	border-bottom: 1px solid #efefef;
+	font-size: 28px;
+	/*font-variant: small-caps;*/
 	font-weight: normal;
-	letter-spacing: 2px;
+	/*letter-spacing: 1px;*/
 	line-height: 44px;
 	margin-bottom: 30px;
+	padding-bottom: 5px;
 	text-align: center;
-	text-transform: lowercase;
+	/*text-transform: lowercase;*/
 }
 
 .content-portfolio h2:hover {
-	border-bottom: 1px solid #FC514A;
+	/*border-bottom: 1px solid #FC514A;*/
+}
+
+.content-portfolio h2 a:link, .content-portfolio h2 a:visited {
+	color: #777;
 }
 
 .content-portfolio h2 a:hover {
 	border: 0;
+	color: #FC514A;
 }
 
 .soon h2:hover {
