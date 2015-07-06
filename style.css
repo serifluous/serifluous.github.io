@@ -134,12 +134,16 @@ ul.header-links li a:hover {
 HOME
 */
 
-.home h1, .home h2 {
+.home .title h1, .home .title h2 {
 	text-align: center;
 }
 
-.home h1 {
+.home .title h1 {
 	margin-top: 150px;
+}
+
+.home .title h2 {
+	margin-top: -100px;
 }
 
 ul#social, .footer ul {
@@ -158,6 +162,19 @@ ul#social li, .footer li {
 
 ul#social li a:hover {
 	border: 0;
+}
+
+/*
+CONTACT
+*/
+
+.contact .title h2:first-child {
+	margin-top: 100px;
+}
+
+.contact .title h2, .contact .title p {
+	margin-top: 80px;
+	text-align: center;
 }
 
 /*
@@ -246,7 +263,7 @@ PORTFOLIO
 	background-image: url('projects/illustrations/femmes-stickers.png');
 }
 
-.portfolio-water {
+/*.portfolio-water {
 	background-image: url('projects/water/water-sketch.JPG');
 }
 
@@ -256,7 +273,8 @@ PORTFOLIO
 
 .portfolio-illustrations p, .portfolio-coup p {
 	color: #eee;
-}
+}*/
+
 /*
 RESUME
 */
@@ -505,9 +523,9 @@ PROJECT-SPECIFIC
 .illustration-section p:first-child {
 	border-bottom: 1px solid #dfdfdf;
 	padding-bottom: 10px;
-	margin-left: auto;
+/*	margin-left: auto;
 	margin-right: auto;
-	width: 800px;
+	width: 800px;*/
 }
 
 
@@ -637,6 +655,16 @@ MEDIA QUERIES
 		font-size: 2em;
 		line-height: 1em;
 		margin-top: 60px;
+	}
+
+	.contact .title h2 {
+		font-size: 2em;
+		line-height: 1.3em;
+	}
+
+	.contact .title p {
+		font-size: 1.5em;
+		line-height: 1.5em;
 	}
 
 	ul#social li {
@@ -804,6 +832,11 @@ MEDIA QUERIES
 
 	p.arrow .arrow-text {
 		margin: 10px;
+	}
+
+	.illustration-section {
+		margin-bottom: 180px;
+		margin-top: 80px;
 	}
 
 }
