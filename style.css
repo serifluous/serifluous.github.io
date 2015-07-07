@@ -301,6 +301,10 @@ RESUME
 WORK
 */
 
+.highlight {
+	background-color: yellow;
+}
+
 p.arrow {
 	line-height: 40px;
 	margin-top: 40px;
