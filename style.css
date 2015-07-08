@@ -302,7 +302,21 @@ WORK
 */
 
 .highlight {
-	background-color: yellow;
+	background-color: rgba(255,227,101,0.3);
+	color: #5B5858;
+    position: relative;
+    left: 0.25em;
+    margin-right: 10px;
+    padding: 3px 5px 3px 0;
+    box-shadow: 0.1em 0 0 rgba(255,227,101,0.3),
+                -0.25em 0 0 rgba(255,227,101,0.3);
+}
+
+.highlight-feature {
+	background-color: #635B38;
+	color: #c0c0c0;
+    box-shadow: 0.1em 0 0 #635B38,
+                -0.25em 0 0 #635B38;
 }
 
 p.arrow {
