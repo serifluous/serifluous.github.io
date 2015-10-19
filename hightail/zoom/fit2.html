@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<head>
+
+	<title>vacation-photo.png</title>
+
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="jquery.unevent.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style2.css" />
+
+	<script>
+
+		function refit() {
+			$( ".fit" ).toggleClass( "fitHeight");
+			$(".overlay .mag-icons").toggleClass("mag");
+		};
+
+		function disabled() {
+			$(".mag-icons").css("cursor","default");
+			$(".mag-icons div").fadeTo(0,0.2);
+
+			$(".no-page").fadeTo(0,0.7);
+
+			$(".mag-icons").hover(
+				function() {
+					$( this ).css("background-color","rgba(58,56,58,0.9)");
+				}, function() {
+					$( this ).css("background-color","rgba(58,56,58,0.9)");
+			});
+		}
+
+		function checkSize() {
+			var viewWidth = $(window).width();
+			var viewHeight = $(window).height();
+
+			if ($(".fit").hasClass( "fitHeight" )) {
+				if (viewWidth < 850) {
+					disabled();
+				} else {
+					$(".mag-icons").fadeTo(0,1).css("cursor","pointer");
+					$(".mag-icons div").fadeTo(0,1);
+
+					$(".mag-icons").hover(
+						function() {
+							$( this ).css("background-color","rgba(46,44,46,0.95)");
+						}, function() {
+							$( this ).css("background-color","rgba(58,56,58,0.9)");
+					});
+				}
+
+			} else if (viewWidth < 850 && viewHeight > (1.45 * viewWidth)) {
+				disabled();
+			} else {
+				$(".mag-icons").fadeTo(0,1).css("cursor","pointer");
+				$(".mag-icons div").fadeTo(0,1);
+
+				$(".mag-icons").hover(
+					function() {
+						$( this ).css("background-color","rgba(46,44,46,0.95)");
+					}, function() {
+						$( this ).css("background-color","rgba(58,56,58,0.9)");
+				});
+			}
+		};
+
+
+		$(document).ready( function() {
+
+			$(".overlay").hide();
+
+			checkSize();
+
+			$(".fit").click( function() {
+				$(".overlay").toggle();
+				$(".photo-color").toggle();
+				$(".annotation").toggle();
+				$(".annotation").css({
+					"top": event.pageY - $(window).scrollTop(),
+					"left": event.pageX
+				});
+			});
+
+			$(".photo-color").click( function() {
+				$(".overlay").toggle();
+				$(".photo-color").toggle();
+				$(".annotation").toggle();
+			});
+
+			$(".container").mouseenter(
+				function() {
+					$(".overlay").fadeToggle(400);
+			});
+
+			$(".container").mouseleave(
+				function() {
+					$(".overlay").delay( 200 ).fadeOut(400)
+			});
+
+			// $( window ).scroll(
+			// 	function() {
+			// 		$(".overlay").fadeIn(400);
+			// });
+
+			// $( window ).on("scroll",
+			// 	function() {
+			// 		$(".overlay").fadeOut(400);
+			// }, 1000);
+
+			// $(".hover-hide").hover(
+			// 	function() {
+			// 		$(".overlay").fadeIn(0);
+			// });
+
+			$(".overlay").click( function() {
+				refit();
+			});
+
+			$(window).resize( function() {
+				checkSize();
+			});
+
+		});
+
+	</script>
+</head>
+
+<body>
+
+	<div class="title-info">
+		<p class="title back"><img src="white-back.svg" alt="back" /> 1 of 12</p>
+		<div class="title right-buttons">
+			<p>
+				<img src="white-circle.svg" alt="more" />
+				<img src="white-large.svg" alt="comments" />
+			</p>
+		</div>
+
+		<div class="details">
+			<p>
+			<span class="name">vacation-photo.png</span>
+			<span class="separator">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+			<span class="version">Version 3</span>
+			</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="left arrow"><p><img src="chevron-left.svg" alt="left" /></p></div>
+
+		<div class="photo">
+			<div class="hover-hide">
+				<img class="fit" src="photo.jpeg" alt="photo" />
+
+				<div class="overlay">
+					<p>1 of 4</p>
+					<div class="mag-icons">
+						<div>
+							<img src="minify.svg" alt="" />
+							<img src="magnify.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="photo-color"></div>
+			<div class="annotation"></div>
+		</div>
+
+		<div class="right arrow"><p><img src="chevron-right.svg" alt="right" /></p></div>
+	</div>
+
+	<!-- <p class="scrolled"></p> -->
+</body>
+
+</html>
