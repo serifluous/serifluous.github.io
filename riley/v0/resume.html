@@ -47,7 +47,7 @@
 	<script type="text/javascript">
 !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
 analytics.load("KQJJ0R6DwhY9DaGaROGr3UZiQM3NgpFx");
-analytics.page('Home')
+analytics.page()
 }}();
 	</script>
 
@@ -67,19 +67,66 @@ analytics.page('Home')
 		</div>
 	</div>
 
-	<div class="home content">
-		<div class="title">
-			<h1>Sarah is a designer in SF.</h1>
-			<h2>Check out <a href="portfolio.html">her work</a>.</h2>
+	<div class="content">
+		<div class="resume container">
+			<h3>Work Experience</h3>
+				<ul>
+	            <div id="resume-hightail">
+	            <li>
+	                <strong><a href="https://www.hightail.com/">Hightail</a> &middot; Product Designer</strong>
+	                <span class="resume-description">I&rsquo;m the design lead on the Core workflow team and designed the email Untangle (upload files by email) flow, permission settings, and video/image previewing interactions.<br /><br />
+	                I also lead creative direction on marketing illustrations that reach over 10k people. I created an illustration style guide to further establish Hightail&rsquo;s visual identity, provide concepts to our contract illustrator, and oversee overall visual style.</span>
+	            </li>
+	            </div>
+	            <div id="resume-clementine">
+	            <li>
+	                <strong>Clementine &middot; Designer</strong>
+	                <span class="resume-description">As one of two designers, I worked on both the iOS and desktop apps. I redesigned the <a href="projects/clementine-iconography.html">iconography</a>, <a href="projects/clementine-onboarding.html">onboarding flow</a>, and <a href="projects/clementine-conferences.html">conference call flow</a>. On the visual design and marketing side, I created 20+ assets and illustrations for our sales team and for marketing emails.<br /><br />
+	                Clementine was a conference call and messaging app for enterprise that was <a href="http://thenextweb.com/insider/2015/07/22/dropbox-has-acquired-communication-service-clementine">acquired by Dropbox in 2015</a>.</span>
+	            </li>
+	            </div>
+	    		<li>
+	    			<strong><a href="http://girlswhocode.com">Girls Who Code</a> &middot; TA at <a href="http://squareup.com">Square</a></strong>
+	    			<span class="resume-description">I taught computer science (<em>e.g.</em>, data structures and algorithms, robotics, web development) with Python and JavaScript to 20 high school girls. I mentored projects in web development and iOS development.</span>
+	    		</li>
+	    		</ul>
 
-			<ul id="social">
-				<li><a href="https://dribbble.com/serifluous"><i class="fa fa-dribbble fa-lg"></i></a></li>
-				<li><a href="https://github.com/serifluous"><i class="fa fa-github fa-lg"></i></a></li>
-				<li><a href="http://instagram.com/serifluous"><i class="fa fa-instagram fa-lg"></i></a></li>
-				<li><a href="https://twitter.com/serifluous"><i class="fa fa-twitter fa-lg"></i></a></li>
-			</ul>
+			<h3>Skills</h3>
+    	<ul>
+    		<li>
+    			<strong>Design</strong>
+    			<span class="resume-description">
+    				UI/UX, Sketch, Framer, Principle<br />
+    				Photoshop, Illustrator, InDesign
+    			</span>
+    		</li>
+            <li>
+               <strong>Dev &amp; Data</strong>
+                <span class="resume-description">
+    				HTML, CSS, JavaScript<br />
+    				Python, R, STATA
+    			</span>
+            </li>
+    	</ul>
+
 		</div>
-
 	</div>
+
+	<div class="footer">
+		<ul>
+			<li><a href="index.html"><strong>Sarah Li</strong></a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+		<ul id="social">
+			<li><a href="https://dribbble.com/serifluous"><i class="fa fa-dribbble fa-lg"></i></a></li>
+			<li><a href="https://github.com/serifluous"><i class="fa fa-github fa-lg"></i></a></li>
+			<li><a href="http://instagram.com/serifluous"><i class="fa fa-instagram fa-lg"></i></a></li>
+			<li><a href="https://twitter.com/serifluous"><i class="fa fa-twitter fa-lg"></i></a></li>
+		</ul>
+	</div>
+
 </body>
 </html>
