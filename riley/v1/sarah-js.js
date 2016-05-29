@@ -2,9 +2,11 @@ $(document).ready(function() {
 	var identities = [
 		"can&rsquo;t stop running",
 		"abuses emoji",
-		"watches Liam Neeson films",
+		"will watch any Liam Neeson film",
 		"codes like a girl",
-		"refuses to wear pants"
+		"refuses to wear pants",
+		"made you look",
+		"falls asleep during long walks on the beach"
 		];
 	var randIdentity = identities[Math.floor( Math.random() * identities.length )];
 	$('#random-header').html( randIdentity ).text();
