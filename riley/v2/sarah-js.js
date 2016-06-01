@@ -1,8 +1,10 @@
 $(document).ready(function() {
 	$('.box-work').hover(function() {
-		$(this).css("color","#E39B17");
+		$('h2' , this).css("color","#E39B17");
+		$('.box-work__image' , this).css("background-color","#F2F2F2")
 	},function() {
-		$(this).css("color","black");
+		$('h2' , this).css("color","#515151");
+		$('.box-work__image' , this).css("background-color","#EEE")
 	});
 
 	$('.em-grey_question').hover(function() {
