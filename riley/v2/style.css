@@ -231,6 +231,14 @@ a:hover {
 	font-size: 18px;
 }
 
+.intro > * {
+	float: left;
+}
+
+.intro__text {
+	width: 60%;
+}
+
 
 
 /*
