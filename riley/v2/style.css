@@ -246,15 +246,11 @@ a:hover {
 @media screen and (max-width: 1050px) {
 
 	#header, .main-work {
-		text-align: center;
 		width: 700px;
 	}
 
-	#header h1, #header h2, .case-study {
+	.case-study {
 		margin-left: inherit;
-	}
-
-	#header h2 {
 	}
 
 	.main-work a:nth-child(even) .box-work {
@@ -269,8 +265,15 @@ a:hover {
 @media screen and (max-width: 700px) {
 
 	#header, .main-work {
-		text-align: center;
 		width: 100%;
+	}
+
+	#header {
+		/*text-align: center;*/
+	}
+
+	.box-work h2, .box-work h3 {
+		margin-left: 30px;
 	}
 
 	.box-work {
