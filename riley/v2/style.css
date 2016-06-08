@@ -160,12 +160,7 @@ a:hover {
 	margin-top: 8px;
 }
 
-.box-work--art-direction img {
-	box-shadow: none;
-}
-
 .box-work--icons img {
-	box-shadow: none;
 	margin-top: 43px;
 }
 
@@ -231,12 +226,26 @@ a:hover {
 	font-size: 18px;
 }
 
-.intro > * {
+.case-study p {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.case-study__intro > * {
 	float: left;
+}
+
+.intro__image {
+	margin-bottom: 50px;
+	margin-right: 50px;
 }
 
 .intro__text {
 	width: 60%;
+}
+
+.case-study__body {
+	clear: both;
 }
 
 

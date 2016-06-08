@@ -1,16 +1,16 @@
 $(document).ready(function() {
 	$('.box-work').hover(function() {
 		$('h2' , this).css("color","#EFAB76");
-		$('.box-work__image' , this).css("background-color","#F2F2F2")
+		$('.box-work__image' , this).css("background-color","#F2F2F2");
 	},function() {
 		$('h2' , this).css("color","#F19650");
-		$('.box-work__image' , this).css("background-color","#EEE")
+		$('.box-work__image' , this).css("background-color","#EEE");
 	});
 
-	$('.em-grey_question').hover(function() {
-		$(this).switchClass("em-grey_question","em-exclamation");
+	$('.tooltip').hover(function() {
+		$(this).css("color","#EFAB76");
 	},function() {
-		$(this).switchClass("em-exclamation","em-grey_question");
+		$(this).css("color","#F19650");
 	});
 
 	var identities = [
@@ -23,3 +23,11 @@ $(document).ready(function() {
 	var randIdentity = identities[Math.floor( Math.random() * identities.length )];
 	$('#random-header').html( randIdentity ).text();
 });
+
+// function hoverLink(target, restColor, hoverColor, cssClass){
+// 	$(target).hover(function() {
+// 		$('h2' , this).css(cssClass , hoverColor);
+// 	},function() {
+// 		$('h2' , this).css(cssClass , restColor);
+// 	});
+// };
