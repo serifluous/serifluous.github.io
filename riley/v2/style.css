@@ -268,12 +268,8 @@ a:hover {
 		width: 100%;
 	}
 
-	#header {
-		/*text-align: center;*/
-	}
-
-	.box-work h2, .box-work h3 {
-		margin-left: 30px;
+	#header h1, #header h2, .box-work h2, .box-work h3 {
+		margin-left: 5%;
 	}
 
 	.box-work {
