@@ -15,7 +15,6 @@ $(document).ready(function() {
 
 	var identities = [
 		"can&rsquo;t stop running",
-		"codes like a girl",
 		"refuses to wear pants",
 		"made you look",
 		"can be found at Boba Guys",
