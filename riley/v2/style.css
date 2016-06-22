@@ -24,10 +24,15 @@ html, body {
 
 h1 {
 	font-weight: 400;
+	font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 h2, h3 {
 	font-weight: 300;
+}
+
+h3 {
+	font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
@@ -62,10 +67,12 @@ a:hover {
 	margin-top: 110px;
 	margin-left: auto;
 	margin-right: auto;
+	overflow: auto;
 	width: 1050px;
 }
 
 #header h1, #header h2 {
+	float: left;
 	margin-left: 30px;
 }
 
@@ -79,10 +86,17 @@ a:hover {
 }
 
 #header h2 {
+	clear: left;
 	color: #B1B0B0;
 	font-size: 16px;
 	letter-spacing: 1px;
 	margin-top: -6px;
+}
+
+#header h2:nth-child(2) {
+	float: right;
+	font-weight: 400;
+	margin-right: 30px;
 }
 
 
@@ -96,7 +110,7 @@ a:hover {
 	margin-top: 100px;
 }
 
-.main-work {
+.main-work, .case-study__nav {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1050px;
@@ -186,6 +200,7 @@ a:hover {
 
 .social h3 {
 	color: #999;
+	font-family: "Work Sans", "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -218,47 +233,111 @@ a:hover {
 	font-size: 30px;
 }
 
-.case-study p {
+.case-study p, .case-study ul {
 	font-size: 16px;
-	line-height: 1.6;
+	line-height: 1.9;
 }
 
 .case-study__intro, .section__content {
-	margin-left: auto;
-	margin-right: auto;
 	width: 1050px;
+	overflow: auto;
 }
 
-.case-study__intro > * {
+.case-study__intro {
+	margin: -50px auto 0px auto;
+}
+
+.section__content {
+	margin: 50px auto 50px auto;
+}
+
+.case-study__intro > *, .section__content > * {
 	margin-left: 30px;
 }
 
 .intro__text {
-	width: 60%;
+	overflow: auto;
 }
 
-.intro__text h2, .intro__text h3 {
-	font-size: 18px;
+.intro__text h1 {
+	margin-bottom: 50px;
+}
+
+.intro__text p {
+	font-family: "Work Sans";
+	color: #B1B0B0;
+}
+
+.intro__text .right {
+	text-align: left;
 }
 
 .intro__text h2 {
+	font-size: 16px;
 	font-weight: 400;
+	line-height: 1.6;
+}
+
+.intro__image {
+	clear: left;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	text-align: center;
 }
 
 .section {
-	clear: both;
 	overflow: auto;
 }
 
 .section:nth-child(odd) {
 	width: 100%;
-	background-color: #EEE;
+	background: #EEE;
+	background: -webkit-linear-gradient(left, #EEE, #DDD); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #EEE, #DDD); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #EEE, #DDD); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #EEE, #DDD); /* Standard syntax */
 }
 
 .left, .right {
 	float: left;
-	height: 400px;
-	width: 50%;
+}
+
+.left {
+	width: 45%;
+}
+
+.right {
+	margin-left: 6%;
+	text-align: center;
+	width: 45%;
+}
+
+.full {
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.full h1 {
+	text-align: center;
+}
+
+.section__content .right {
+	margin-top: 25px;
+}
+
+.case-study__nav {
+	padding-top: 70px;
+}
+
+.case-study__nav h3:first-child {
+	float: left;
+	margin-left: 30px;
+}
+
+.case-study__nav h3:nth-child(2) {
+	float: right;
+	margin-right: 30px;
 }
 
 
