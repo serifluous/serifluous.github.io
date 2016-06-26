@@ -264,19 +264,15 @@ a:hover {
 	margin-bottom: 50px;
 }
 
-.intro__text p {
+.intro__text h2 {
 	font-family: "Work Sans";
+	font-size: 18px;
+	font-weight: 400;
 	color: #B1B0B0;
 }
 
 .intro__text .right {
 	text-align: left;
-}
-
-.intro__text h2 {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.6;
 }
 
 .intro__image {
@@ -465,6 +461,11 @@ a:hover {
 	.intro__image {
 		text-align: left;
 		margin-left: 5%;
+	}
+
+	.case-study p, .case-study ul {
+	font-size: 18px;
+	/*line-height: 2.1;*/
 	}
 
 	.case_study__nav__text {
