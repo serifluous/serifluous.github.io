@@ -468,7 +468,13 @@ a:hover {
 	/*line-height: 2.1;*/
 	}
 
-	.case_study__nav__text {
+	.case-study__nav {
+		font-weight: 600;
+		font-size: 28px;
+		padding: 0;
+	}
+
+	.case-study__nav__text {
 		display: none;
 	}
 
