@@ -440,10 +440,6 @@ a:hover {
 		font-size: 18px;
 	}
 
-	.box-work h3 {
-		font-size: 18px;
-	}
-
 	.full, .left, .right, .intro__text, .section__content > h1 {
 		width: 90%;
 		margin-left: 5%;
