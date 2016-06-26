@@ -419,7 +419,7 @@ a:hover {
 	#header h2.about {
 		clear: both;
 		font-size: 14px;
-		margin-top: -31px;
+		margin-top: -32px;
 		margin-right: 15px;
 		text-align: center;
 	}
@@ -456,6 +456,10 @@ a:hover {
 	.intro__text > * {
 		margin-left: 0;
 		width: 100%;
+	}
+
+	.intro__text h1 {
+		margin-bottom: 20px;
 	}
 
 	.intro__image {
