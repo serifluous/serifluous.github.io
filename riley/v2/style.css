@@ -478,4 +478,16 @@ a:hover {
 		display: none;
 	}
 
+	#footer {
+		height: 180px;
+	}
+
+	.social h3 {
+		font-size: 16px;
+	}
+
+	.social ul {
+		font-size: 30px;
+	}
+
 }
