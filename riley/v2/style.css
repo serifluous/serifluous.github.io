@@ -490,4 +490,9 @@ a:hover {
 		font-size: 30px;
 	}
 
+	.social li {
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+
 }
