@@ -478,17 +478,18 @@ a:hover {
 	}
 
 	.case-study__nav h3:first-child, .case-study__nav h3:nth-child(2) {
-		/*border: 1px solid black;*/
-		margin-top: -7px;
+		margin-top: -9px;
 	}
 
 	.case-study__nav h3:nth-child(3) {
 		font-size: 20px;
 		display: inherit;
+		margin-top: 50px;
 		text-align: center;
 	}
 
 	#footer {
+		margin-top: 5px;
 		height: 180px;
 	}
 
