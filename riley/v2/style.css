@@ -327,7 +327,6 @@ a:hover {
 	padding-top: 70px;
 	width: 100%;
 }
-
 .case-study__nav h3:first-child {
 	float: left;
 	margin-left: 30px;
@@ -337,6 +336,11 @@ a:hover {
 	float: right;
 	margin-right: 30px;
 }
+
+.case-study__nav h3:nth-child(3) {
+	display: none;
+}
+
 
 
 
@@ -461,7 +465,6 @@ a:hover {
 
 	.case-study p, .case-study ul {
 	font-size: 17px;
-	/*line-height: 2.1;*/
 	}
 
 	.case-study__nav {
@@ -472,6 +475,17 @@ a:hover {
 
 	.case-study__nav__text {
 		display: none;
+	}
+
+	.case-study__nav h3:first-child, .case-study__nav h3:nth-child(2) {
+		/*border: 1px solid black;*/
+		margin-top: -7px;
+	}
+
+	.case-study__nav h3:nth-child(3) {
+		font-size: 24px;
+		display: inherit;
+		text-align: center;
 	}
 
 	#footer {
