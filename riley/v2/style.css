@@ -353,6 +353,9 @@ a:hover {
 	text-align: center;
 }
 
+.intro__text p.about {
+	margin-bottom: 40px;
+}
 
 
 /*
@@ -497,6 +500,15 @@ a:hover {
 		display: inherit;
 		margin-top: 50px;
 		text-align: center;
+	}
+
+	.intro__text .about img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.intro__text p.about {
+		margin-bottom: 20px;
 	}
 
 	#footer {
