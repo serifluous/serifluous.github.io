@@ -234,7 +234,7 @@ a:hover {
 	font-size: 30px;
 }
 
-.case-study p, .case-study ul {
+.case-study p, .case-study ul, .case-study ol, .intro__text p {
 	font-size: 16px;
 	line-height: 1.9;
 }
@@ -341,6 +341,17 @@ a:hover {
 	display: none;
 }
 
+
+
+/*
+***********************
+	 ABOUT
+***********************
+*/
+
+.intro__text .about {
+	text-align: center;
+}
 
 
 
