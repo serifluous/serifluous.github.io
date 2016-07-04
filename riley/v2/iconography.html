@@ -1,18 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
 <head>
 	<meta name="description" content="Sarah Li is a product designer in SF. Currently works at Hightail. Previously built UI and UX at Clementine.">
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,400i,600|Work+Sans:300,400,600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="http://heysarah.li/scripts/font-awesome-4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<script src="http://heysarah.li/scripts/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="sarah-js.js"></script>
 
-	<link href="http://heysarah.li/scripts/css/zoom.css" rel="stylesheet">
-	<script src="http://heysarah.li/scripts/js/zoom.js"></script>
-	<script src="http://heysarah.li/scripts/js/transition.js"></script>
+  	<link rel="stylesheet" type="text/css" href="http://heysarah.li/scripts/css/zoom.css">
+
 
 	<!-- start Google Analytics -->
 	<script>
@@ -81,8 +83,8 @@
 						<div class="section__content">
 							<div class="full">
 								<h1>Inspiration</h1>
-								<p>For inspiration, I looked mainly to enterprise/B2B products that focused on communication and productivity, as well as products that relied heavily on icons to represent a wide range of concepts and actions.</p>
-								<p class="case-study__image"><img src="images/icons-inspiration@2x.png" alt="Pinterest Inspiration Board" width="648" height="456" data-action="zoom" /></p>
+								<p>For inspiration, I looked mainly to enterprise and B2B products that focused on communication and productivity, as well as products that relied heavily on icons to represent a wide range of concepts and actions.</p>
+								<p class="case-study__image image-shadow"><img src="images/icons-inspiration@2x.png" alt="Pinterest Inspiration Board" width="648" height="456" data-action="zoom" /></p>
 							</div>
 						</div>
 					</div>
@@ -91,15 +93,20 @@
 						<div class="section__content">
 							<div class="full">
 								<h1>Sketching</h1>
-								<p>Sketching icons with pen and paper allowed me to quickly explore ideas and run them by the team.</p>
-								<p>A few icons that warranted more time and discussion:</p>
+								<p>While initially discussing the icon redesign with the Clementine team, a few issues came up:</p>
 
 								<ul>
-								<li>Copy contact info to clipboard&mdash;how would I distinguish this from the share icon?</li>
-								<li>Conferences&mdash;as a team, we were still deciding on what constituted a conference (Is it scheduled? Is it a multi-person call?) and how it differed from a normal call.</li>
-								<li>Directory &amp; Groups&mdash;how can I make these as gender-neutral or as representative of all genders as possible?</li>
-								<li>Invite via email/contacts/text&mdash;how can I distinguish this from our normal email, contacts, and text message icons?</li>
+								<li>How would we distinguish icons that are related in imagery but represent different actions (<em>e.g.,</em> &ldquo;copy contact info to clipboard&rdquo; vs. &ldquo;share&rdquo;)?</li>
+								<li>Is there a difference between a conference call and a normal phone call to our customers?</li>
+								<li>Since business imagery tends to be very male-biased, how do we make our icons and visual design as gender-neutral and inclusive as possible?</li>
 								</ul>
+
+								<p>Sketching icons with pen and paper allowed me to explore these issues quickly and run my ideas by the design and product teams frequently.</p>
+
+								<p class="case-study__image image-shadow">
+									<img src="images/icons-sketching-1@2x.png" alt="Icon sketch" width="45%" height="45%" data-action="zoom" />
+									<img src="images/icons-sketching-2@2x.png" alt="Icon sketch" width="45%" height="45%" data-action="zoom" />
+								</p>
 							</div>
 						</div>
 					</div>
@@ -110,9 +117,19 @@
 								<h1>Testing</h1>
 								<p>I assembled the first pass at the redesigned icons into their appropriate screens by overlaying them on app screenshots. This made it easy to get feedback since everything was contextualized with real content. The mockups made it clear exactly where the icons and app needed visual and functional improvement.</p>
 
-								<p>I spent more time iterating on icons for groups, empty states, and invite icons since they were challenging in terms of inclusion, tone, and increasing motivation toward an action. I focused on using the right visual tone, while keeping icons as simple, consistent, and meaningful as possible.</p>
+								<p class="case-study__image image-shadow">
+									<img src="images/icons-testing-mockups-1@2x.png" alt="Mockup of icons for testing" width="320" height="568" />
+									<img src="images/icons-testing-mockups-2@2x.png" alt="Mockup of icons for testing" width="320" height="568" />
+								</p>
 
-								<p>I also took the time to decrease our icon bloat. The conference scheduling screen had icons in almost every entry field. This cluttered a screen that already forced a large amount of cognitive load on the user because of the multiple form actions required. Moreover, the icons didn’t add much utility that the text labels couldn&rsquo;t already provide.</p>
+								<p>From this lightweight prototyping and testing, we learned that the icons for groups, empty states, and invite icons needed more clarity since they were most easily confused with other actions. A few iterations can be seen below.</p>
+
+								<p class="case-study__image"><img src="images/icons-testing-iterations@2x.png" alt="Icon iterations" width="518" height="252" /></p>
+
+								<p>I also took the time to decrease our icon bloat. For example, the conference scheduling screen had icons in almost every entry field. This cluttered a screen that already overloaded a user with multiple form inputs. Moreover, the icons didn&rsquo;t add information that the text labels weren&rsquo;t already providing.</p>
+
+								<p class="case-study__image image-shadow">
+								<img src="images/icons-testing-conference@2x.gif" alt="Conference schedule before and after" width="48%" height="48%" /></p>
 							</div>
 						</div>
 					</div>
@@ -120,17 +137,18 @@
 					<div class="section">
 						<div class="section__content">
 							<div class="full">
-								<h1>Prototyping &amp; Handoff</h1>
-								<p>Some of the icons would be used in animated interactions, and I wanted to make sure they&rsquo;d work fully before finishing up the icon set. I built out a few animations to pass to our engineers.</p>
-								<p>An important part of the icon redesign process was ensuring assets would be easy to find and replace if any further iterations were done. It was also important for our engineers to be able to quickly and easily find the assets they were looking for since there were a large number we needed to replace.</p>
+								<h1>Handoff</h1>
+								<p>An important part of the icon redesign process was ensuring assets would be easy to find and replace if any further iterations were done. It was also important for our engineers to be able to quickly and easily find the assets they were looking for since we were replacing over 100 icons at once.</p>
 
 								<p>I reorganized our asset library by</p>
 
 								<ul>
 								<li>Prefixing asset names in the same tab group. For example, the names of all assets that were unique to the Messages tab began with “message-”.</li>
 								<li>Making sure icons that shared similar forms had the same subname. For example, all icons with a speech bubble had the word “message” in their file names.</li>
-								<li>Creating a reference sheet (below) with asset names and organized by file structure in the library for easy reference. This also made it easy to quickly edit and export assets whenever needed.</li>
+								<li>Creating a reference sheet (excerpt below) with asset names and organized by file structure in the library for easy reference. This also made it easy to quickly edit and export assets whenever needed.</li>
 								</ul>
+
+								<p class="case-study__image image-shadow"><img src="images/icons-handoff@2x.png" alt="Icon reference sheet" width="455" height="1019" /></p>
 							</div>
 						</div>
 					</div>
@@ -139,7 +157,10 @@
 						<div class="section__content">
 							<div class="full">
 								<h1>The New Icons</h1>
-								<p>The final set I created came out to over 100 icons (with even more for the desktop app). It primarily used Clementine&rsquo;s orange and grays. The app&rsquo;s previous icons often relied too much on our secondary colors alone to provide visual contrast.</p>
+
+								<p class="case-study__image"><img src="images/icons-final@2x.png" alt="Final icons" width="572" height="384" /></p>
+
+								<p>The final set I created came out to over 100 icons, with even more for the desktop app. It primarily used Clementine&rsquo;s orange and grays, while the app&rsquo;s previous icons relied too much on our secondary color palette to provide visual contrast.</p>
 							</div>
 						</div>
 					</div>
@@ -148,12 +169,12 @@
 						<div class="section__content">
 							<div class="full">
 							<h1>Results</h1>
-								<p>We heard back from our customers, who were overwhelmingly positive in their feedback. They said that the latest Clementine release with the new icons completely changed the look of the app (for good), which was exactly what we were going for.</p>
+								<p>We heard back from our customers, who were overwhelmingly positive in their feedback. They said that the new icons improved the look of the app, and they felt more confident navigating and taking action throughout the app.</p>
 								<p>Along the way, I</p>
 
 								<ul>
 								<li>Reorganized our asset library to help our engineers build faster and better. It also made it faster for the design team to find and share assets.</li>
-								<li>Made the three brand words I relied on at the start of the project (trustworthy, friendly, secure) a key part of our product. These words were the way we began presenting our product to Clementine&rsquo;s different audiences.</li>
+								<li>Made the three brand words I relied on at the start of the project (trustworthy, friendly, secure) a key part of our product. These words were the way we began presenting our product to Clementine&rsquo;s customers and potential investors.</li>
 								</ul>
 							</div>
 						</div>
@@ -163,7 +184,7 @@
 
 				<div class="case-study__nav">
 					<h3><a href="art-direction.html">&larr; <span class="case-study__nav__text">Art Direction &amp; Visual Design</span></a></h3>
-					<h3><a href="conference-calls.html"><span class="case-study__nav__text">Conference Calls</span> &rarr;</a></h3>
+					<h3><a href="onboarding.html"><span class="case-study__nav__text">iOS Onboarding</span> &rarr;</a></h3>
 					<h3><a href="index.html">View more work</a></h3>
 				</div>
 
@@ -182,6 +203,11 @@
 			</ul>
 		</div>
 	</div>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  	<!-- @fat's jQuery zoom plugin https://github.com/fat/zoom.js-->
+	<script src="http://heysarah.li/scripts/js/zoom.js"></script>
 
 </body>
 

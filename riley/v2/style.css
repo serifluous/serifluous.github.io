@@ -56,6 +56,12 @@ a:hover {
 	margin-top: -6px;
 }
 
+.image-shadow img {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(177,176,176,0.7);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(177,176,176,0.7);
+	box-shadow: 0px 0px 5px 0px rgba(177,176,176,0.7);
+}
+
 
 /*
 ***********************
@@ -230,8 +236,19 @@ a:hover {
 ***********************
 */
 
+.case-study {
+	padding-top: 20px;
+}
+
 .case-study h1 {
 	font-size: 30px;
+}
+
+.case-study h2 {
+	font-family: "Work Sans";
+	font-size: 18px;
+	font-weight: 400;
+	color: #B1B0B0;
 }
 
 .case-study p, .case-study ul, .case-study ol, .intro__text p {
@@ -239,50 +256,48 @@ a:hover {
 	line-height: 1.9;
 }
 
+.case-study__image {
+	clear: left;
+	margin: 50px 0 50px 0;
+	text-align: center;
+}
+
+.case-study__image img {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 .case-study__intro, .section__content {
 	width: 1050px;
-	overflow: auto;
+}
+
+.section__content {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 100px;
+	padding-top: 100px;
 }
 
 .case-study__intro {
 	margin: -50px auto 0px auto;
 }
 
-.section__content {
-	margin: 50px auto 50px auto;
-}
-
 .case-study__intro > *, .section__content > * {
 	margin-left: 30px;
 }
 
-.intro__text {
-	overflow: auto;
+.case-study__intro::after, .section__content::after, .intro__text::after, .section::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .intro__text h1 {
 	margin-bottom: 50px;
 }
 
-.intro__text h2 {
-	font-family: "Work Sans";
-	font-size: 18px;
-	font-weight: 400;
-	color: #B1B0B0;
-}
-
 .intro__text .right {
 	text-align: left;
-}
-
-.case-study__image {
-	clear: left;
-	margin: 30px 0 50px 0;
-	text-align: center;
-}
-
-.section {
-	overflow: auto;
 }
 
 .section:nth-child(odd) {
@@ -315,11 +330,12 @@ a:hover {
 }
 
 .full h1 {
+	margin-bottom: 35px;
 	text-align: center;
 }
 
-.section__content .right {
-	margin-top: 25px;
+.full p:first-child {
+	margin-top: 20px;
 }
 
 .case-study__nav {
@@ -351,6 +367,10 @@ a:hover {
 	color: #F27D65;
 	font-family: "Work Sans";
 	font-weight: 400;
+}
+
+h2.case-study-icons__trait {
+	font-size: 28px;
 }
 
 
