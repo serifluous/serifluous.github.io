@@ -256,6 +256,12 @@ a:hover {
 	line-height: 1.9;
 }
 
+.case-study li {
+	margin-left: -10px;
+	margin-bottom: 10px;
+	padding: 2px;
+}
+
 .case-study__image {
 	clear: left;
 	margin: 50px 0 50px 0;
@@ -426,13 +432,8 @@ h2.case-study-icons__trait {
 		width: 100%;
 	}
 
-	.full h1, .right {
-		text-align: left;
-	}
-
 	.right {
 		margin-left: 0;
-		margin-bottom: 50px;
 	}
 
 	.section__content {
@@ -452,6 +453,7 @@ h2.case-study-icons__trait {
 	.about__body {
 		width: 65%;
 	}
+
 }
 
 @media screen and (max-width: 700px) {
@@ -506,6 +508,10 @@ h2.case-study-icons__trait {
 		font-size: 18px;
 	}
 
+	.full h1, .right {
+		text-align: left;
+	}
+
 	.full, .left, .right, .intro__text, .section__content > h1 {
 		width: 90%;
 		margin-left: 5%;
@@ -526,7 +532,17 @@ h2.case-study-icons__trait {
 	}
 
 	.case-study p, .case-study ul {
-	font-size: 17px;
+		font-size: 17px;
+	}
+
+	.case-study__image {
+		margin-left: 0px;
+		/*margin-top: 5px;*/
+	}
+
+	.case-study__image img {
+		margin-left: 0;
+		margin-bottom: 5px;
 	}
 
 	.case-study__nav {
