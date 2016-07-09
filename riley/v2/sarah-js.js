@@ -7,12 +7,6 @@ $(document).ready(function() {
 		$('.box-work__image' , this).css("background-color","#EEE");
 	});
 
-	$('.tooltip').hover(function() {
-		$(this).css("color","#EFAB76");
-	},function() {
-		$(this).css("color","#F19650");
-	});
-
 	var identities = [
 		"can&rsquo;t stop running",
 		"refuses to wear pants",
