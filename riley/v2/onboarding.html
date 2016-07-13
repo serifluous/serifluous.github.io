@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="http://heysarah.li/scripts/font-awesome-4.6.3/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="sarah-js.js"></script>
 
   	<link rel="stylesheet" type="text/css" href="http://heysarah.li/scripts/css/zoom.css">
 
@@ -41,48 +40,106 @@
 
 	<div id="main">
 		<div class="main-case-study">
-			<div class="case-study case-study--icons">
+			<div class="case-study case-study--onboarding">
 
 				<div class="case-study__intro">
 					<div class="intro__text">
 						<h1>iOS Onboarding</h1>
+
+						<p class="case-study__image">
+							<img src="images/onboarding-intro.png" alt="Onboarding intro" />
+						</p>
+
 						<div class="left">
 							<h2>Company</h2>
 							<p><a href="https://angel.co/clementine-labs">Clementine</a>, a conference call and messaging app for enterprise. Acquired by Dropbox in 2015.</p>
 						</div>
 						<div class="right">
 							<h2>Responsibilities</h2>
-							<p>In redesigning the onboarding flow, our main goal was to craft the story of the Clementine experience. At the same time, onboarding should introduce new customers to four main features:</p>
+							<p>In designing the onboarding flow, the main goal was to craft the story of the Clementine experience while introducing new customers to four main features:</p>
 
 							<ol>
-							<li>A private Clementine number for business</li>
-							<li>Conference calls</li>
+							<li>A personal Clementine number for business calls</li>
+							<li>Conference calling</li>
 							<li>Secure voice and text communication</li>
 							<li>Call recording and message archiving</li>
 							</ol>
-
-							<p>Our previous onboarding flow wasn&rsquo;t engaging enough and consisted mainly of UI screenshots. Most importantly, it didn’t tell a story.</p>
 						</div>
 					</div>
-
-					<p class="intro__image">
-						<!-- <img src="images/home-icons@2x.png" alt="Icons" width="225" height="163" /> -->
-					</p>
 				</div>
 
 				<div class="case-study__body">
 
 					<div class="section">
-						<div class="section__content">
+						<div class="section__content half">
 							<h1>Competitive Analysis</h1>
+
 							<div class="left">
-								<p>I pinpointed a few apps with onboarding flows that were great examples of the same high-level goals we as a team wanted to achieve. Each app had complex interactions or features explained in a personable, interactive way.</p>
-								<p>What I noticed was that as the actual complexity of the app increased, the more its onboarding abstracted its features.</p>
-								<p><a href="http://www.useronboard.com/onboarding-teardowns/">Sam Hulick Onboarding Teardowns</a></p>
+								<p>I pinpointed a few apps with onboarding flows that were great examples of the same high-level goal we wanted to achieve. Each product explained their complex interactions or features in a personable, interactive way.</p>
+								<p>What I noticed was that as the actual complexity of the app increased, the more its onboarding abstracted its features into simpler concepts.</p>
+								<p><a href="http://www.useronboard.com/onboarding-teardowns/">Sam Hulick&rsquo;s Onboarding Teardowns</a> were also a great resource in gathering inspiration.</p>
 							</div>
 
 							<div class="right">
-								<h2>Logos</h2>
+								<p class="logos">
+									<img
+										srcset="images/onboarding-logo-carousel.png 120w,
+												images/onboarding-logo-carousel-small.png 60w"
+										sizes="(min-width: 800px) 8vw, 20vw"
+										src="images/onboarding-logo-carousel.png"
+										alt="Carousel logo" />
+								</p>
+								<p class="logos">
+									<img
+										srcset="images/onboarding-logo-pocket.png 120w,
+												images/onboarding-logo-pocket-small.png 60w"
+										sizes="(min-width: 800px) 8vw, 20vw"
+										src="images/onboarding-logo-pocket.png"
+										alt="Pocket logo" />
+								</p>
+								<p class="logos">
+									<img
+										srcset="images/onboarding-logo-slack.png 120w,
+												images/onboarding-logo-slack-small.png 60w"
+										sizes="(min-width: 800px) 8vw, 20vw"
+										src="images/onboarding-logo-slack.png"
+										alt="Slack logo" />
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="section__content">
+							<div class="full">
+								<h1>Designing for 3 Personas</h1>
+								<p>Through interviews with current and potential customers, we developed three personas based on user roles and motivations in the context of Clementine.</p>
+
+								<div class="persona-list">
+									<div class="persona">
+										<p class="case-study__image">
+											<img class="image-shadow" src="images/onboarding-persona-sales.png" alt="Business cat" />
+										</p>
+										<h2>The Employee</h2>
+										<p>Typically a salesperson, the employee&rsquo;s focus is on getting the job done with conference calls and messaging through a private business line.</p>
+									</div>
+
+									<div class="persona">
+										<p class="case-study__image">
+											<img src="images/onboarding-persona-CIO.png" alt="I should buy a boat cat" />
+										</p>
+										<h2>The Chief Information/Compliance Officer</h2>
+										<p>The CIO/CCO&rsquo;s responsibility is approving an app that meets their company&rsquo;s compliance, security, and archiving standards.</p>
+									</div>
+
+									<div class="persona">
+										<p class="case-study__image">
+											<img src="images/onboarding-persona-IT.png" alt="Hacker cat" />
+										</p>
+										<h2>The IT Admin</h2>
+										<p>The IT Admin is all about efficiency and ensuring business products can used in conjunction at their company. Their focus is on directory integration, app flexibility, and accounting.</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -91,15 +148,15 @@
 						<div class="section__content">
 							<div class="full">
 								<h1>Concepts &amp; Sketching</h1>
-								<p>I sketched out ideas to get feedback from the team without letting visuals interfere with critique. Sketches were more detailed than usual since our onboarding is heavily visual. I wanted to outline illustrations/interactions early to save time during the prototyping phase.</p>
+								<p>I sketched out ideas to get feedback from the team to avoid letting high-fidelity visuals interfere with critique. However, sketches were more detailed than usual since our onboarding would be heavily visual. I wanted to show as much of the illustrations and interactions as I could early in the process to save time during prototyping.</p>
 
-								<p>While sketching, I kept in mind that:</p>
+								<p>While sketching, I kept three things in mind:</p>
 
-								<ul>
+								<ol>
 								<li>While Clementine is an enterprise product, it&rsquo;s still consumer-facing. The language and tone should reflect that.</li>
-								<li>We have diverse customers, so each of the highlighted features needs to shine and fit into the product story.</li>
-								<li>People progress through onboarding differently, so the pacing of onboarding should be flexible.</li>
-								</ul>
+								<li>Each of the highlighted features needs to shine <em>and</em> fit into the product story for each of our three personas.</li>
+								<li>People progress through onboarding differently with different goals in mind, so the pacing of onboarding should be flexible.</li>
+								</ol>
 							</div>
 						</div>
 					</div>
@@ -107,17 +164,10 @@
 					<div class="section">
 						<div class="section__content">
 							<div class="full">
-								<h1>Prototyping</h1>
-								<p>x</p>
-							</div>
-						</div>
-					</div>
+								<h1>Storyboards &amp; Prototyping</h1>
+								<p>In Sketch, I drew out quick storyboards for each screen of onboarding to provide another higher level of fidelity for the team. These helped finalize the features we wanted to highlight in each step of onboarding and made it clear which visuals, when transferred to screen, needed iteration.</p>
 
-					<div class="section">
-						<div class="section__content">
-							<div class="full">
-								<h1>Testing</h1>
-								<p>x</p>
+								<p>No UI is the best UI</p>
 							</div>
 						</div>
 					</div>
@@ -126,15 +176,18 @@
 						<div class="section__content">
 							<div class="full">
 								<h1>Clementine&rsquo;s New Onboarding</h1>
-								<p>x</p>
+
+								<p class="case-study__image">
+									<img src="images/onboarding-animation.gif" alt="Onboarding animation" />
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<div class="case-study__nav">
-					<h3><a href="iconography.html">&larr; <span class="case-study__nav__text">Iconography</span></a></h3>
-					<h3><a href="conference-calls.html"><span class="case-study__nav__text">Conference Calls</span> &rarr;</a></h3>
+					<h3><a href="conference-calls.html">&larr; <span class="case-study__nav__text">Conference Calls</span></a></h3>
+					<h3>&nbsp;</h3>
 					<h3><a href="index.html">View more work</a></h3>
 				</div>
 
@@ -158,6 +211,7 @@
   	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
   	<!-- @fat's jQuery zoom plugin https://github.com/fat/zoom.js-->
 	<script src="http://heysarah.li/scripts/js/zoom.js"></script>
+	<script src="sarah-js.js"></script>
 
 </body>
 
