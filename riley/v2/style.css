@@ -439,8 +439,9 @@ h2.case-study-icons__trait {
 ***********************
 */
 
-.intro__text .about {
+.intro__text h1.about, .intro__text p.about {
 	text-align: center;
+	margin-left: 0;
 }
 
 .intro__text p.about {
