@@ -474,9 +474,13 @@ h2.case-study-icons__trait {
 @media screen and (max-width: 1050px) {
 
 	#header, .main-work,
-	.case-study .intro__text, .half, .section__content,
-	.full, .left, .right {
+	.case-study .intro__text, .half, .section__content
+	/*.full, .left, .right*/ {
 		width: 700px;
+	}
+
+	.left, .right, .full {
+		width: 90%;
 	}
 
 	.box-work--onboarding, .box-work--onboarding .box-work__image {
@@ -661,6 +665,11 @@ h2.case-study-icons__trait {
 
 	.about__body {
 		width: 90%;
+	}
+
+	h1.about {
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 
 	#footer {
