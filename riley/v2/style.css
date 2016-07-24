@@ -149,6 +149,10 @@ a:hover {
 	margin-top: 25px;
 }
 
+.box-work--onboarding .box-work__image img {
+	margin-top: -20px;
+}
+
 .long, .long .box-work__image {
 	width: 650px;
 }
@@ -396,6 +400,7 @@ a:hover {
 
 h2.case-study-icons__trait {
 	font-size: 28px;
+	margin-top: 10px;
 }
 
 
@@ -429,6 +434,21 @@ h2.case-study-icons__trait {
 
 .case-study--onboarding p.logos:nth-child(3) {
 	margin-top: 50px;
+}
+
+
+/*
+***********************
+	 ART DIRECTION
+***********************
+*/
+
+.case-study--art-direction .case-study__intro .case-study__image {
+	margin-bottom: 0;
+}
+
+.case-study--art-direction .case-study__body {
+	margin-top: -10px;
 }
 
 
@@ -502,6 +522,10 @@ h2.case-study-icons__trait {
 
 	.about__body {
 		width: 65%;
+	}
+
+	h2.case-study-icons__trait {
+		margin-top: 20px;
 	}
 
 	.case-study--onboarding p.logos,
@@ -667,7 +691,7 @@ h2.case-study-icons__trait {
 		width: 90%;
 	}
 
-	h1.about {
+	.intro__text h1.about {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
