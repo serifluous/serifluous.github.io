@@ -8,8 +8,8 @@ $(document).ready(function() {
 		"falls asleep during long walks on the beach",
 		"thinks that shirt looks good on you",
 		"can be found dead or alive",
-		"is currently watching Orange is the New Black",
-		"is currently reading The Amazing Adventures of Kavalier &amp; Clay"
+		"is watching Orange is the New Black",
+		"is reading The Amazing Adventures of Kavalier &amp; Clay"
 		];
 	var randIdentity = identities[Math.floor( Math.random() * identities.length )];
 	$('#random-header').html( randIdentity ).text();
