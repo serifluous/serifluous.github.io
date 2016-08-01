@@ -200,9 +200,8 @@ h2.coming-soon {
 	margin-left: -35px;
 }
 
-.box-work--storyboard img {
-	/*margin-top: -130px;*/
-	/*margin-left: -130px;*/
+.box-work--tasks img {
+	margin-top: 20px;
 }
 
 .box-work--icons img {
