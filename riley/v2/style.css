@@ -185,19 +185,25 @@ h2.coming-soon {
 	font-weight: 300;
 }
 
+
 /*
 ***********************
 	 WORK
 ***********************
 */
 
+.box-work--guest img {
+	margin-top: 0px;
+/*	margin-left: -15px;*/
+}
+
 .box-work--mobile img {
-	margin-top: 8px;
+	margin-top: 0px;
 }
 
 .box-work--art-direction img {
 	margin-top: -70px;
-	margin-left: -35px;
+	margin-left: 0px;
 }
 
 .box-work--tasks img {
