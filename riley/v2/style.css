@@ -179,6 +179,12 @@ a:hover {
 	margin-top: -7px;
 }
 
+h2.coming-soon {
+	color: #B1B0B0;
+	font-style: italic;
+	font-weight: 300;
+}
+
 /*
 ***********************
 	 WORK
@@ -192,6 +198,11 @@ a:hover {
 .box-work--art-direction img {
 	margin-top: -70px;
 	margin-left: -35px;
+}
+
+.box-work--storyboard img {
+	/*margin-top: -130px;*/
+	/*margin-left: -130px;*/
 }
 
 .box-work--icons img {
