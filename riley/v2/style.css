@@ -452,18 +452,29 @@ h2.case-study-icons__trait {
 	margin-bottom: 50px;
 }
 
-.case-study--onboarding p.logos:first-child {
+p.logos:first-child {
 	margin-left: -250px;
 	margin-top: -70px;
 }
 
-.case-study--onboarding p.logos:nth-child(2) {
+p.logos:nth-child(2) {
 	margin-left: 350px;
 	margin-top: -50px;
 }
 
-.case-study--onboarding p.logos:nth-child(3) {
+p.logos:nth-child(3) {
 	margin-top: 50px;
+}
+
+
+/*
+***********************
+	 CONFERENCE CALLS
+***********************
+*/
+
+.case-study--conference-calls p.logos:first-child {
+	margin-top: 0px;
 }
 
 
@@ -558,9 +569,8 @@ h2.case-study-icons__trait {
 		margin-top: 20px;
 	}
 
-	.case-study--onboarding p.logos,
-	.case-study--onboarding p.logos:first-child,
-	.case-study--onboarding p.logos:nth-child(2) {
+
+	p.logos, p.logos:first-child, p.logos:nth-child(2) {
 		display: inline-block;
 		margin-left: 20px;
 		margin-right: 20px;
@@ -695,11 +705,9 @@ h2.case-study-icons__trait {
 		margin-bottom: 20px;
 	}
 
-	.case-study--onboarding p.logos,
-	.case-study--onboarding p.logos:first-child,
-	.case-study--onboarding p.logos:nth-child(2) {
+	p.logos, p.logos:first-child, p.logos:nth-child(2) {
 		margin-top: 0;
-		margin-left: 13px;
+		margin-left: 20px;
 		margin-right: 13px;
 	}
 
