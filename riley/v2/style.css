@@ -10,6 +10,8 @@ Hover: #EFAB76
 Box Gray: #EEE
 Box Gray Hover: #F2F2F2
 
+Shadow: 0px 0px 5px 0px rgba(177,176,176,0.7)
+
 */
 
 
@@ -192,13 +194,16 @@ h2.coming-soon {
 ***********************
 */
 
-.box-work--guest img {
-	margin-top: 0px;
-/*	margin-left: -15px;*/
+.box-work--organizing img {
+	margin-top: 23px;
 }
 
-.box-work--mobile img {
+/*.box-work--guest img {
 	margin-top: 0px;
+}*/
+
+.box-work--mobile img {
+	margin-top: 20px;
 }
 
 .box-work--art-direction img {
@@ -399,7 +404,9 @@ h2.coming-soon {
 }
 
 .persona-list {
+	margin-left: 50px;
 	margin-top: 30px;
+	width: 80%;
 }
 
 .persona {
@@ -473,8 +480,20 @@ p.logos:nth-child(3) {
 ***********************
 */
 
-.case-study--conference-calls p.logos:first-child {
+.case-study--conference-calls .case-study__intro .case-study__image {
+	margin-bottom: 0;
+}
+
+.case-study--conference-calls .case-study__body {
+	margin-top: -10px;
+}
+
+/*.case-study--conference-calls p.logos:first-child {
 	margin-top: 0px;
+}*/
+
+.case-study--conference-calls .persona-list {
+	margin-bottom: 40px;
 }
 
 
@@ -576,6 +595,11 @@ p.logos:nth-child(3) {
 		margin-right: 20px;
 	}
 
+	.persona-list {
+		margin-left: 0;
+		width: 100%;
+	}
+
 }
 
 @media screen and (max-width: 700px) {
@@ -588,6 +612,7 @@ p.logos:nth-child(3) {
 		background-color: #EEE;
 		height: 50px;
 		margin-top: 0;
+		overflow: hidden;
 	}
 
 	#header h2:first-of-type {
@@ -608,6 +633,7 @@ p.logos:nth-child(3) {
 		margin-top: -32px;
 		margin-right: 15px;
 		text-align: center;
+		overflow: none;
 	}
 
 	#header h2 a:link, #header h2 a:visited {
@@ -622,7 +648,7 @@ p.logos:nth-child(3) {
 
 	.box-work, .box-work__image,
 	.box-work--onboarding, .box-work--onboarding .box-work__image,
-	.box-work--space-organization, .box-work--space-organization .box-work__image {
+	.box-work--organizing, .box-work--organizing .box-work__image {
 		width: 100%;
 	}
 
