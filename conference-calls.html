@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta name="description" content="Sarah Li is a product designer in SF. Currently works at Hightail. Previously built UI and UX at Clementine.">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,400i,600|Work+Sans:300,400,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://heysarah.li/scripts/font-awesome-4.6.3/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+  	<link rel="stylesheet" type="text/css" href="http://heysarah.li/scripts/css/zoom.css">
+
+	<!-- start Google Analytics -->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63335278-1', 'auto');
+  ga('send', 'pageview');
+
+	</script>
+	<!-- end Google Analytics -->
+
+	<title>Sarah Li, Designer | Conference Calls</title>
+</head>
+
+<body>
+
+	<div id="header">
+		<h1><a href="index.html">Sarah Li</a></h1>
+		<h2>designs products in San Francisco</h2>
+		<h2 class="about"><a href="about.html">About + Contact</a></h2>
+	</div>
+
+	<div id="main">
+		<div class="main-case-study">
+			<div class="case-study case-study--conference-calls">
+
+				<div class="case-study__intro">
+					<div class="intro__text">
+						<h1>Conference Calls</h1>
+						<div class="left">
+							<h2>Company</h2>
+							<p><a href="https://angel.co/clementine-labs">Clementine</a>, a conference call and messaging app for enterprise. Acquired by Dropbox in 2015.</p>
+						</div>
+						<div class="right">
+							<h2>Role &amp; Responsibilities</h2>
+							<p>As one of two UI/UX designers, I designed the mobile conference call experience with the goal of reassuring customers that their calls were being made with their Clementine number and not their personal number.</p>
+
+							<p>An additional requirement for the project was to make the UI scalable for additional call features we had on the product roadmap, including call transferring and conference rescheduling.</p>
+						</div>
+					</div>
+
+					<p class="case-study__image">
+						<img
+							srcset="images/conference-intro@2x.png 1472w,
+									images/conference-intro.png 736w,
+									images/conference-intro-small.png 368w"
+							sizes="(min-width: 900px) 40vw, 90vw"
+							src="images/conference-intro@2X.png"
+							alt="Conference Screen" />
+					</p>
+				</div>
+
+				<div class="case-study__body">
+
+					<div class="section">
+						<div class="section__content">
+							<div class="full">
+								<h1>The Problem</h1>
+
+								<p>Many customers who had experimented with other conference call apps before were used to apps that dial a conference line using the customer&rsquo;s personal phone number. However, one of our core features was giving customers their own business line through the app to keep their work and personal lives separate.</p>
+
+								<p>Prior to the redesign, Clementine&rsquo;s conference call screen looked too similar to the iOS phone UI. Through customer feedback and testing, we found that they weren&rsquo;t always sure if calls were being made through the app or through their own phone number.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="section__content">
+							<div class="full">
+								<h1>Customer Personas</h1>
+								<p>Through interviews with current and potential customers, we developed three personas based on user roles and motivations in Clementine:</p>
+
+								<div class="persona-list">
+									<div class="persona">
+										<p class="case-study__image">
+											<img class="image-shadow" src="images/onboarding-persona-sales.png" alt="Business cat" />
+										</p>
+										<h2>The Employee</h2>
+										<p>Typically a salesperson, the employee spends much of their day on phone calls and messaging through a private business line to get their job done.</p>
+									</div>
+
+									<div class="persona">
+										<p class="case-study__image">
+											<img src="images/onboarding-persona-CIO.png" alt="I should buy a boat cat" />
+										</p>
+										<h2>The Chief Information / Compliance Officer</h2>
+										<p>The CIO/CCO&rsquo;s responsibility is approving an app that meets their company&rsquo;s compliance, security, and archiving standards.</p>
+									</div>
+
+									<div class="persona">
+										<p class="case-study__image">
+											<img src="images/onboarding-persona-IT.png" alt="Hacker cat" />
+										</p>
+										<h2>The IT Admin</h2>
+										<p>The IT Admin is all about efficiency and ensuring business products can used in conjunction at their company. Their focus is on directory integration, app flexibility, and accounting.</p>
+									</div>
+								</div>
+
+								<p>While it was valuable to design for the needs of the CIO/COO and IT Admin personas in other areas of the app, the Employee would be the one spending the most amount of time making conference calls.</p>
+								<p>This meant that the conference call experience had to be as straightforward as possible for someone making sensitive calls to many different people every day. It would be important for the app to give clear feedback about what was happening during a call.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="section__content half">
+							<h1>Competitive Research</h1>
+							<div class="left">
+								<p>I looked mainly at enterprise telephony apps to get a sense of how they handle multi-person phone calls and what they&rsquo;re still lacking. I also considered consumer-focused communication apps that have a larger pool of customers.</p>
+
+								<p>General trends I found were that</p>
+
+								<ul>
+								<li>Many apps limit tasks you can perform when you&rsquo;re in a call and don&rsquo;t let you return to the normal app UI.</li>
+								<li>Few apps show who&rsquo;s in a call and who isn&rsquo;t.</li>
+								<li>Ways in which you start a conference call vary, but the majority of apps require you to start from a preexisting group, not by selecting people individually.</li>
+								</ul>
+							</div>
+
+							<div class="right">
+								<p class="logos">
+									<img
+										srcset="images/conference-logo-uberconference.png 120w,
+												images/conference-logo-uberconference-small.png 60w"
+										sizes="(min-width: 800px) 8vw, 20vw"
+										src="images/onboarding-logo-uberconference.png"
+										alt="UberConference logo" />
+								</p>
+								<p class="logos">
+									<img
+										srcset="images/conference-logo-messenger.png 120w,
+												images/conference-logo-messenger-small.png 60w"
+										sizes="(min-width: 800px) 8vw, 20vw"
+										src="images/onboarding-logo-messenger.png"
+										alt="Messenger logo" />
+								</p>
+								<p class="logos">
+									<img
+										srcset="images/onboarding-logo-slack.png 120w,
+												images/onboarding-logo-slack-small.png 60w"
+										sizes="(min-width: 800px) 8vw, 20vw"
+										src="images/onboarding-logo-slack.png"
+										alt="Slack logo" />
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="section__content">
+							<div class="full">
+								<h1>Sketching</h1>
+								<p>I sketched out a few ideas to get high-level feedback from the team. Questions I mulled over during sketching were:</p>
+
+								<ul>
+								<li>Which call functionalities should be top-level during a call, and which can be hidden?</li>
+								<li>Do customers need to be able to see who&rsquo;s on a call at all times, or is communicating through voice sufficient?</li>
+								<li>How do we strike a balance between making the call experience a cohesive part of the whole product and differentiating it enough from the rest of the app so customers know for sure when they&rsquo;re in a call?</li>
+								</ul>
+							</div>
+
+							<p class="case-study__image image-shadow image-corner">
+								<img
+									srcset="images/conference-sketching-1@2x.jpg 1000w,
+											images/conference-sketching-1.jpg 500w,
+											images/conference-sketching-1-small.jpg 250w"
+									sizes="(min-width: 900px) 25vw, 43vw"
+									src="images/conference-sketching-1@2x.jpg"
+									alt="Conference call sketch" data-action="zoom" />
+							<br />
+								<img
+									srcset="images/conference-sketching-2@2x.jpg 1000w,
+											images/conference-sketching-2.jpg 500w,
+											images/conference-sketching-2-small.jpg 250w"
+									sizes="(min-width: 900px) 25vw, 43vw"
+									src="images/conference-sketching-2@2x.jpg"
+									alt="Conference call sketch" data-action="zoom" />
+							</p>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="section__content">
+							<div class="full">
+								<h1>Wireframes</h1>
+								<p>Starting the project, the top priority goal was branding our conference call experience. It was a change our customers were clamoring for and needed to be pushed out in an immediate release.</p>
+								<p>For wireframes, I focused first on the conference call screen. Since we wanted the screen to be Clementine-branded, I kept to our color and type guidelines and explored different hierarchies for call information and controls.</p>
+								<p>I also explored options for emphasizing and hiding different call controls (<em>e.g.</em>, end call, mute, speaker). At the wireframing stage, what we knew for sure was that people found it most important to know who they were on a call with. Until further user research and testing, I had little information about what controls people found most important to see during a call. </p>
+							</div>
+
+								<p class="case-study__image image-shadow image-corner">
+									<img
+										srcset="images/conference-wireframe-1@2x.jpg 375w,
+												images/conference-wireframe-1.jpg 188w,
+												images/conference-wireframe-1-small.jpg 94w"
+										sizes="(min-width: 1000px) 8vw, 18vw"
+										src="images/conference-wireframe-1@2x.jpg"
+										alt="Wireframe of conference call" />
+									<img
+										srcset="images/conference-wireframe-2@2x.jpg 375w,
+												images/conference-wireframe-2.jpg 188w,
+												images/conference-wireframe-2-small.jpg 94w"
+										sizes="(min-width: 1000px) 8vw, 18vw"
+										src="images/conference-wireframe-2@2x.jpg"
+										alt="Wireframe of conference call" />
+									<img
+										srcset="images/conference-wireframe-3@2x.jpg 375w,
+												images/conference-wireframe-3.jpg 188w,
+												images/conference-wireframe-3-small.jpg 94w"
+										sizes="(min-width: 1000px) 8vw, 18vw"
+										src="images/conference-wireframe-3@2x.jpg"
+										alt="Wireframe of conference call" />
+									<img
+										srcset="images/conference-wireframe-4@2x.jpg 375w,
+												images/conference-wireframe-4.jpg 188w,
+												images/conference-wireframe-4-small.jpg 153w"
+										sizes="(min-width: 1000px) 8vw, 18vw"
+										src="images/conference-wireframe-4@2x.jpg"
+										alt="Wireframe of conference call" />
+								</p>
+
+							<div class="full">
+								<p>After iterating and critique with the team, I landed on three key features of the conference call screen:</p>
+							</div>
+
+							<p class="case-study__image">
+								<img
+									srcset="images/conference-wireframe-final@2x.png 613w,
+											images/conference-wireframe-final.png 320w,
+											images/conference-wireframe-final-small.png 160w"
+									sizes="(min-width: 900px) 19vw, 43vw"
+									src="images/conference-wireframe-final@2x.png"
+									alt="Final conference call mockup" />
+							</p>
+
+							<div class="full">
+								<ol>
+								<li>The conference call screen would use style guidelines consistent with the rest of the app, but with different hierarchy, especially in typography and color.</li>
+								<li>Information would be organized primarily by the <em>x</em>-axis to optimize the amount of information on-screen. In the rest of the app, information is organized vertically, but using a horizontal structure here would give more space to present vital information, such as participants and call controls.</li>
+								<li>Call controls would be kept from obstructing the view of as many participants as possible.</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="section__content">
+							<div class="full">
+								<h1>Prototyping &amp; User Testing</h1>
+								<p>To put our new conference call experience in the hands of users, I built interactive prototypes to simulate how call controls appear in a call. I wanted to find out what people need to see most during a call: the list of participants or call controls. The prototype had the screen split 50/50.</p>
+							</div>
+
+							<p class="case-study__image image-corner image-shadow">
+								<img src="images/conference-prototype-2@2x.gif" alt="Conference call animation" height="457" width="257" />
+							</p>
+
+							<div class="full">
+								<p>I also built prototypes to simulate different ways of adding more features to the call. This was an exploratory exercise and would be important for the next version of the feature. One of my prototypes (below) expanded actions from the user avatar.</p>
+							</div>
+
+							<p class="case-study__image image-corner image-shadow">
+								<img src="images/conference-prototype-1@2x.gif" alt="Conference call animation" height="457" width="256" />
+							</p>
+
+							<div class="full">
+								<p>Since the conference call experience is such a core part of the Clementine product, it was especially important that we get feedback from our customers and new users. We sought out test users who worked in target industries (finance, healthcare, etc.) and made frequent work calls.</p>
+								<p>User testing and interviews clarified a great deal about people&rsquo;s habits and preferences during a conference call. Chiefly, what people consider most important during a call is <em>knowing who&rsquo;s already joined the call and who they&rsquo;re waiting on</em>. Another key insight was that people wanted the <em>call control panel to be as simple as possible</em>: the mute, speaker, and end call functions should always be clear and easily accessible.</p>
+							</div>
+
+							<p class="case-study__image image-corner image-shadow">
+								<img
+									srcset="images/conference-user-testing@2x.jpg 351w,
+											images/conference-user-testing.jpg 175w,
+											images/conference-user-testing.jpg 87w"
+									sizes="(min-width: 940px) 20vw, 42vw"
+									src="images/conference-user-testing@2x.jpg"
+									alt="User testing screenshot for conference calls" />
+							</p>
+
+							<div class="full">
+								<p>The original design with a 50/50 split between call controls and the participant list wouldn&rsquo;t cut it for our customers. The final design needed more real estate for the participant list and greater clarity for call controls.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="section__content">
+							<div class="full">
+								<h1>The Redesigned Conference Call</h1>
+							</div>
+
+								<p class="case-study__image image-shadow image-corner">
+									<img
+										srcset="images/conference-final-1@2x.jpg 320w,
+												images/conference-final-1.jpg 160w,
+												images/conference-final-1-small.jpg 80w"
+										sizes="(min-width: 750px) 10vw, 35vw"
+										src="images/conference-final-1@2x.jpg"
+										alt="Final incoming call" />
+									<img
+										srcset="images/conference-final-2@2x.jpg 320w,
+												images/conference-final-2.jpg 160w,
+												images/conference-final-2-small.jpg 80w"
+										sizes="(min-width: 750px) 10vw, 35vw"
+										src="images/conference-final-2@2x.jpg"
+										alt="Final conference call" />
+								</p>
+
+							<div class="full">
+								<p>The final conference call design incorporated much of the information the Clementine team and our customers found to be key to a successful call experience:</p>
+
+								<ul>
+									<li>Attention-grabbing, branded incoming/outgoing call screens (top left), so customers know without a doubt when they&rsquo;re making Clementine calls</li>
+									<li>Call controls that are clear and easy to access</li>
+									<li>Information about who&rsquo;s on a call that can be seen at a glance</li>
+									<li>UI patterns consistent with the rest of the app, but presented with enough contrast to differentiate the experience</li>
+									<li>A seamless experience from the start of a call to its finish. This means that customers can initiate a call within most contexts in the app, whether from a chat thread, group, or call history.</li>
+									<li>The design also incorporated elements of other ongoing projects at Clementine, including our new <a href="iconography.html">icon set</a> and universal navigation menu (below). This new menu allowed for greater flexibility for future feature development in calls, as well as elsewhere in the product.</li>
+								</ul>
+							</div>
+
+							<p class="case-study__image image-corner image-shadow">
+								<img src="images/conference-menu@2x.gif" alt="Final conference call menu" height="457" width="257" />
+							</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="case-study__nav">
+					<h3><a href="iconography.html">&larr; <span class="case-study__nav__text">Iconography</span></a></h3>
+					<h3><a href="onboarding.html"><span class="case-study__nav__text">iOS Onboarding</span> &rarr;</a></h3>
+					<h3><a href="index.html">View more work</a></h3>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="social">
+			<h3>Say Hey</h3>
+			<ul>
+				<li><a href="mailto:li.sarah.y@gmail.com"><i class="fa fa-envelope-o fa-lg"></i></a></li>
+				<li><a href="https://dribbble.com/serifluous" target="_blank"><i class="fa fa-dribbble fa-lg"></i></a></li>
+				<li><a href="http://instagram.com/serifluous" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+				<li><a href="https://twitter.com/serifluous" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  	<!-- @fat's jQuery zoom plugin https://github.com/fat/zoom.js-->
+	<script src="http://heysarah.li/scripts/js/zoom.js"></script>
+	<script src="sarah-js.js"></script>
+
+</body>
+
+</html>

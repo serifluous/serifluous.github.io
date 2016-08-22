@@ -17,7 +17,7 @@ a:hover {
 #header {
 	float: left;
 	margin-left: 30px;
-	margin-top: 50px;
+	margin-top: 30px;
 	width: 92%;
 }
 
@@ -90,10 +90,6 @@ ul#social li {
 ***********************
 */
 
-@media print {
-
-}
-
 @media screen and (max-width: 470px) {
 	#icons img.box-image {
 		width: 85%;
@@ -102,6 +98,12 @@ ul#social li {
 }
 
 @media screen and (max-width: 675px) {
+
+	#header {
+		margin-left: 20px;
+		margin-top: 0;
+		width: 90%;
+	}
 
 	ul#navigation {
 		float: none;

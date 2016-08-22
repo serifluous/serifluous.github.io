@@ -5,7 +5,11 @@ $(document).ready(function() {
 		"will watch any Liam Neeson film",
 		"codes like a girl",
 		"made you look",
-		"falls asleep during long walks on the beach"
+		"falls asleep during long walks on the beach",
+		"thinks that shirt looks good on you",
+		"can be found dead or alive",
+		"is watching Orange is the New Black",
+		"is reading The Amazing Adventures of Kavalier &amp; Clay"
 		];
 	var randIdentity = identities[Math.floor( Math.random() * identities.length )];
 	$('#random-header').html( randIdentity ).text();

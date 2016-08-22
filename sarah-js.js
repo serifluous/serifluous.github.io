@@ -1,27 +1,29 @@
 $(document).ready(function() {
+	$('.box-work').hover(
+		if ($('h2', this).hasClass('coming-soon') == false) {
+		function() {
+		$('h2' , this).css("color","#EFAB76");
+		$('.box-work__image' , this).css("background-color","#F2F2F2");
+	},function() {
+		$('h2' , this).css("color","#F19650");
+		$('.box-work__image' , this).css("background-color","#EEE");
+	}});
+
 	var identities = [
 		"can&rsquo;t stop running",
-		"abuses emoji",
-		"will watch any Liam Neeson film",
-		"codes like a girl",
+		"refuses to wear pants",
 		"made you look",
-		"falls asleep during long walks on the beach",
-		"thinks that shirt looks good on you",
-		"can be found dead or alive",
-		"is watching Orange is the New Black",
-		"is reading The Amazing Adventures of Kavalier &amp; Clay"
+		"can be found at Boba Guys",
+		"provides free succulent-naming services"
 		];
 	var randIdentity = identities[Math.floor( Math.random() * identities.length )];
 	$('#random-header').html( randIdentity ).text();
-
-	$('h1.display').fitText(1.3, { maxFontSize: '36px' });
-	$('h2.display').fitText(2, { maxFontSize: '22px' });
 });
 
-// function hoverBox(){
-// 	$('#navigation li').hover(function() {
-// 		$(this).addClass('has-background');
+// function hoverLink(target, restColor, hoverColor, cssClass){
+// 	$(target).hover(function() {
+// 		$('h2' , this).css(cssClass , hoverColor);
 // 	},function() {
-// 		$(this).removeClass('has-background');
+// 		$('h2' , this).css(cssClass , restColor);
 // 	});
 // };
