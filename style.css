@@ -109,7 +109,7 @@ a:hover {
 	float: right;
 	font-weight: 400;
 	margin-right: 30px;
-	margin-top: -31px;
+	margin-top: -34px;
 }
 
 
@@ -208,7 +208,7 @@ h2.coming-soon {
 
 .box-work--art-direction img {
 	margin-top: -70px;
-	margin-left: 0px;
+	margin-left: -90px;
 }
 
 .box-work--tasks img {
@@ -518,6 +518,14 @@ p.logos:nth-child(3) {
 ***********************
 */
 
+.case-study--mobile .case-study__intro case-study__image {
+	margin-bottom: 0;
+}
+
+.case-study--mobile .case-study__body {
+	margin-top: -60px;
+}
+
 .case-study--mobile .video {
 	width: 360px;
 	margin-left: auto;
@@ -575,7 +583,8 @@ p.logos:nth-child(3) {
 		width: 90%;
 	}
 
-	.box-work--onboarding, .box-work--onboarding .box-work__image {
+	.box-work--onboarding, .box-work--onboarding .box-work__image,
+	.box-work--organizing, .box-work--organizing .box-work__image {
 		width: 300px;
 	}
 
@@ -586,10 +595,6 @@ p.logos:nth-child(3) {
 	.half h1 {
 		margin-left: 0;
 		text-align: center;
-	}
-
-	.main-work a:nth-child(even) .box-work {
-		clear: left;
 	}
 
 	.about__body {
@@ -788,6 +793,14 @@ p.logos:nth-child(3) {
 	.social li {
 		margin-left: 12px;
 		margin-right: 12px;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+
+	.box-work--organizing .box-work__image img {
+		margin-left: -25px;
 	}
 
 }
