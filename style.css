@@ -297,6 +297,10 @@ h2.coming-soon {
 	color: #B1B0B0;
 }
 
+.case-study h3 {
+	line-height: 1.8;
+}
+
 .case-study p, .case-study ul, .case-study ol, .intro__text p {
 	font-size: 16px;
 	line-height: 1.9;
