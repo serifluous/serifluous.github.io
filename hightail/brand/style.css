@@ -18,6 +18,29 @@ p {
 	width: 600px;
 }
 
+a {
+	color: #F15B41;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+li {
+	margin-bottom: 5px;
+	margin-left: -20px;
+	list-style: none;
+}
+
+ul {
+	margin-bottom: 50px;
+}
+
+p#back {
+	margin-top: 30px;
+}
+
 .text__color {
 	color: #f2f2f2;
 	padding: 2px 4px 2px 4px;
