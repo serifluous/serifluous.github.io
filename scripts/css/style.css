@@ -1,11 +1,16 @@
 
 * {
 	font-family: "Helvetica Neue", sans-serif;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 .f1,
 .f2 {
 	font-family: "Playfair Display";
 	font-weight: 900;
+}
+
+img {
+	font-family: "Menlo";
+	color: lightgray;
 }
