@@ -158,39 +158,33 @@
 
 		<h1 class="f3" id="case-system">Managing the design system process</h1>
 			<img src="" alt="Design system flowchart for engineering, design, and source of truth" />
-			<p class="f5">In late 2017, LendUp adopted a new visual identity, Upswing.<!--  However, when applying Upswing across all our products, we had basic components (<em>e.g.</em>., links, buttons), but they weren&rsquo;t defined enough for all touchpoints within our products. We couldn&rsquo;t do a simple find-and-replace to update type, colors, and spacing.</p>
-			<p class="f5"> --> We had new styles and some basic components but still had a long way to ago before they could scale across all our products and platforms.<!-- and in our CSS, and weren&rsquo;t yet extended to React components to use in our web and mobile apps. --></p>
-
+			<p class="f5">In late 2017, LendUp adopted a new visual identity, Upswing. We had new styles and some basic components but still had a long way to ago before it could scale across all our products and platforms.</p>
 			<p class="f5">In other words, we had some components but <em>no system and needed a plan to roll out Upswing</em>.</p>
-			<!-- <p class="f5">Starting in 2018, I managed the process of applying our design system across products and platforms, and led the design of our card components. This project also certainly wouldn&rsquo;t have happened without both the design and engineering teams&rsquo; flexibility and openness to experiment.</p> -->
-				<p class="f5"></p>
+
 			<h2 class="f4">Goals</h2>
 				<p class="f5">The design team knew that to have a functioning design system, we needed to establish processes upfront, not just components. Figuring out how to manage components across design and engineering would be just as important as building them in the first place.</p>
 				<p class="f5">I created goals for managing our design system to make it:</p>
 				<ul class="f5">
-					<!-- <li><strong>Trackable</strong>&mdash;It should be easy to sync on what work still needed to be done</li> -->
 					<li><strong>Usable for the design team</strong>&mdash;It should be easy to share components across the design team.</li>
 					<li><strong>Usable for customers</strong> &mdash;It should be easy to design components that are obvious and accessible to our customers.
 					<li><strong>Scalable</strong>&mdash;It should be trivial for front-end engineers to extend components for new states and use cases.</li>
-					<li><strong>Trackable</strong>&mdash;It should be easy for the design and engineering teams to check on progress.
+					<li><strong>Trackable</strong>&mdash;It should be easy for the design and engineering teams to check in on progress.
 				</ul>
 			<h2 class="f4">Proof of concept</h2>
-				<p class="f5">Working with a front-end engineer, I used the mobile app as a proof of concept for how we might start applying Upswing.</p>
+				<p class="f5">Working with a front-end engineer, I used the mobile app as a testing ground for how we might start applying Upswing. Because the mobile app&rsquo;s codebase was fairly isolated, it made it easy to test processes here first without major ripple effects.</p>
 
-				<p class="f5">Mobile app was good bc codebase was isolated. We could test processes first w/o changes to other products.</p>
+				<p class="f5">For the mobile app, I started by designing card components since they were one of our most complex components, needing to represent multiple states and information types. Starting from a complex component would make it easier to then extend styles to simpler components.</p>
+				<img src="" alt="Card system design guidelines" />
 
-				<p class="f5">Tested usability. Modular card components. Developer menu for auditing and tracking.</p>
+				<p class="f5">After an initial pass at applying Upswing, we validated the app&rsquo;s information hierarchy through testing during the <a href="#case-dashboard">credit card dashboard redesign</a> and used <a href="https://webaim.org/resources/contrastchecker/" target="_blank">accessibility</a> <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor&hl=en_US" target="_blank">checkers</a> to make sure components worked well together and were usable for customers.</p>
+
+				<p class="f5">We also collaborated on building an in-app developer menu for easy component auditing and tracking.</p>
+				<img src="" alt="Screenshot of the developer menu" />
 
 <!-- 				<p class="f5">As we worked, we began to see where things might go wrong. Some components could be easily adapted from old ones but others needed to be rebuilt entirely.</p>
 				<p class="f5">Going through all the components in the codebase together would be extremely inefficient since it wasn&rsquo;t straightforward to tell if the final visual implementation were correct.</p>
 				<p class="f5">To help with this, we created a developer menu within the app for our primary components. It made it quicker for me to visually audit components and for both of us to know whether we needed to update or create a new component.</p>
 				<img src="" alt="Screenshot of the developer menu" />
-
-				<p class="f5">I kept the goals of our design system in mind as I:</p>
-				<ul class="f5">
-					<li>Built new components using Sketch symbols to make them easily <strong>reusable</strong> for myself and eventually modular and <strong>scalable</strong> when coded.</li>
-					<li>Validated information hierarchy through testing and used <a href="https://webaim.org/resources/contrastchecker/" target="_blank">accessibility</a> <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.accessibility.auditor&hl=en_US" target="_blank">checkers</a> to make sure components worked well together and were <strong>usable</strong> for customers</li>
-					<li>Created a list of screens to <strong>track</strong> what needed to be updated and the status of each.</li>
 				</ul> -->
 
 			<h2 class="f4"><span class="strike">Failing</span> Learning fast</h2>
