@@ -16,6 +16,10 @@
 
   	<link rel="stylesheet" type="text/css" href="scripts/css/zoom.css">
 
+  	<link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
+
 	<!-- start Google Analytics -->
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,7 +47,7 @@
 			<h2 class="f3">My work</h2>
 			<p class="f5">📱 &nbsp;<a href="#case-dashboard">Redesigning the Arrow Card dashboard</a></p>
 			<p class="f5">👩‍👩‍👧‍👦 &nbsp;<a href="#case-system">Managing a design system</a></p>
-			<!-- <p class="f5">💳 &nbsp;<a href="#case-payment">Improving bill payment conversion</a></p> -->
+			<p class="f5">💳 &nbsp;<!-- <a href="#case-payment"> --><em>Improving bill payment conversion<!-- </a> --> &mdash; Coming soon</em></p>
 <!-- 		<a href="#more-work">More work</a> -->
 			<p class="f5">Pssst, need a 📄 <a href="https://docs.google.com/document/d/14z84NU9-KIbLrhp-P6zZGDxeVgKqUyeQkkbgNqTwUJk/edit?usp=sharing" target="_blank">r&eacute;sum&eacute;</a>? Or reach out at <a href="mailto:sarahgetsemails@gmail.com">sarahgetsemails@gmail.com</a>.</p>
 
@@ -207,11 +211,11 @@
 
 				<h3 class="f4">Designing components</h3>
 					<p class="f5">Systems and processes are great, but customers were still our #1 concern. Since we were creating so many new components, we needed to set usability standards to validate them.</p>
-					<p class="f5">We adopted accessibility checklists and Eva Kaniasty&rsquo;s <a href="http://www.slipperstudios.com/services/carmel-ux/" target="_blank">CARMEL</a> guidelines to score the quality of our work. We built on top of the <a href="https://signalvnoise.com/posts/3047-the-obvious-the-easy-and-the-possible" target="_blank">Obvious, Easy, Possible</a> framework and started mapping relationships between an element&rsquo;s hierarchy and an appropriate component style.</p>
+					<p class="f5">We adopted accessibility checklists and Eva Kaniasty&rsquo;s <a href="https://www.lendup.com/blog/design-quality.html" target="_blank">CARMEL</a> guidelines to score the quality of our work. We built on top of the <a href="https://signalvnoise.com/posts/3047-the-obvious-the-easy-and-the-possible" target="_blank">Obvious, Easy, Possible</a> framework and started mapping relationships between an element&rsquo;s hierarchy and an appropriate component style.</p>
 				<p class="tc">
 					<img class="mw5-ns" src="images/system-OEP.png" alt="Mapping button styles to OEP" />
 				</p>
-				<p class="f5 caption i tc">How OEP might map to our button components</p>
+				<p class="f5 caption i tc">How OEP mapped to our button components</p>
 
 				<h3 class="f4 mt4">Sharing components</h3>
 					<img class="ba br2" src="images/system-abstract.png" alt="Our Sketch libraries in Abstract" />
@@ -219,19 +223,29 @@
 					<p class="f5">Since we were creating components piecemeal, we held frequent design reviews to make sure we were all in sync. Reviews were helpful for identifying components that could be used across teams and were then promoted to the shared library.</p>
 
 				<h3 class="f4 mt4">Scaling components</h3>
-				<img src="" alt="Screenshot of Ladder cards" />
-					<p class="f5">We approached every new project with the assumption that a component or screen design wouldn&rsquo;t be a one-off solution. Because we were using CARMEL guidelines, which emphasize <strong>coherence</strong> and <strong>efficiency</strong>, the quality of our work was evaluated on whether it reused existing Upswing components.</p>
+					<p class="f5">We approached every new project with the assumption that a component or screen design wouldn&rsquo;t be a one-off solution. Because our CARMEL guidelines emphasized <strong>coherence</strong> and <strong>efficiency</strong>, the quality of our work was evaluated on whether it reused existing Upswing components.</p>
+				
+					<img src="images/system-card_examples.png" alt="Card component examples" />
+					<p class="f5 caption i tc">The card component could be extended to different use cases across products.</p>
+
 					<p class="f5">This in turn made conversations with engineers easier when we knew upfront what components could be adapted with minimal engineering work.</p>
 
 				<h3 class="f4 mt4">Tracking progress</h3>
-				<img src="" alt="Screenshot of developer menu" />
 					<p class="f5">I landed on a simple shared text table to track touchpoints, ownership, status, and relevant documentation so we knew what we still had left to do. We had too many non-digital touchpoints <!-- (<em>e.g.</em>, credit card plastics, physical mail assets)  -->or ones that couldn&rsquo;t easily link to existing issue tracker tools. Sometimes, a text doc will just end up being the most flexible way to PM.</p>
 					<p class="f5">On the engineering side, I collaborated with an engineer to build a developer menu to audit components on the mobile app. On web, engineers leveraged <a href="https://storybook.js.org/" target="_blank">Storybook</a>.</p>
+					
+					<p class="tc">
+						<img class="mw5-ns" src="images/system-dev_menu.png" alt="Screenshot of developer menu" />
+					</p>
+					<p class="f5 caption i tc">The in-app developer menu</p>
 
 			<h2 class="f4 bb mt4">Results</h2>
+
 				<p class="f5">The processes that got us to shipping Upswing made us more efficient at producing quality work and communicating with our teams. Bringing product and engineering into the design system process meant we all had a shared language to talk about hierarchy, components, and visual style&mdash;conversations that could otherwise end in cross-functional misunderstandings.</p>
 
 				<p class="f5">Setting usability and quality standards meant that the design team presented cohesive work to our product and engineering teams, but <em>more importantly</em>, to our customers.</p>
+
+				<img class="ba br2" src="images/system-final.png" alt="Final design guidelines" />
 
 				<p class="f5">For our customers, who are already time-, resource-, and money-constrained, it can be hard to tolerate one more frustrating and disappointing experience, especially with their financial institutions.</p>
 
