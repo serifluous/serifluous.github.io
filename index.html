@@ -170,20 +170,20 @@
 		<h1 class="f2" id="case-system">Managing a design system</h1>
 			<!-- <img src="" alt="Design system flowchart for engineering, design, and source of truth" /> -->
 			<p class="f5">In late 2017, LendUp adopted a new visual identity, Upswing. We had new styles and some basic components but still had a long way to ago before it could scale across all our products and platforms.</p>
-			<p class="f5">In other words, we had a few components but <em>no design system and needed a plan to roll out Upswing</em>.</p>
+			<p class="f5">In other words, we had a few components but <em>no design system and still needed a plan to roll out Upswing</em>.</p>
 
-			<p class="f5">The design team knew that to have a functioning design system, we needed to establish processes upfront, not just components. Figuring out how to manage components across design and engineering would be just as important as building them in the first place.</p>
+			<p class="f5">The design team knew that to have a functioning design system, we needed to establish processes upfront, not just design components. Figuring out how to manage components across design and engineering would be just as important as building them in the first place.</p>
 
 			<p class="tc">
 				<img class="mw5-ns" src="images/system-goals.png" alt="Components circle inside design system circle" />
 			</p>
-			<p class="tc f5 i caption">Components are just one part within a larger design system.</p>
+			<p class="tc f5 i caption">Components are just one part of a larger design system.</p>
 
 			<h2 class="f4 bb mt4">Goals</h2>
 
-				<p class="f5 mt4">I created goals for managing our design system to make it:</p>
+				<p class="f5 mt4">I created goals for managing our design system so it would be:</p>
 				<ul class="f5">
-					<li><strong>Usable for customers</strong> &mdash;It should be easy to design components that are intuitive and accessible to our customers.</li>
+					<li><strong>Usable for customers</strong>&mdash;It should be easy to design components that are intuitive and accessible to our customers.</li>
 					<li><strong>Usable for the design team</strong>&mdash;It should be easy to share components across the design team.</li>
 					<li><strong>Scalable</strong>&mdash;It should be trivial for front-end engineers to extend components to new states and use cases.</li>
 					<li><strong>Trackable</strong>&mdash;It should be easy for the design and engineering teams to check in on progress.</li>
@@ -207,7 +207,7 @@
 				<p class="f5">With the product team&rsquo;s buy-in, we could start honing the design system and processes.</p>
 
 				<h3 class="f4">Designing components</h3>
-					<p class="f5">Despite all this talk of internal processes, customers were still our #1 concern. Since we were creating so many new components, we needed to set usability standards to validate them.</p>
+					<p class="f5">Even with all this talk of internal processes, customers were still our #1 priority. Since we were creating so many new components at once, we needed a set of usability standards.</p>
 					<p class="f5">We adopted accessibility checklists and Eva Kaniasty&rsquo;s <a href="https://www.lendup.com/blog/design-quality.html" target="_blank">CARMEL</a> guidelines to score the quality of our work. We built on top of the <a href="https://signalvnoise.com/posts/3047-the-obvious-the-easy-and-the-possible" target="_blank">Obvious, Easy, Possible</a> framework and started mapping relationships between an element&rsquo;s hierarchy and an appropriate component style.</p>
 				<p class="tc">
 					<img class="mw5-ns" src="images/system-OEP.png" alt="Mapping button styles to OEP" />
@@ -217,10 +217,10 @@
 				<h3 class="f4 mt4">Sharing components</h3>
 					<img class="ba br2" src="images/system-abstract.png" alt="Our Sketch libraries in Abstract" />
 					<p class="f5">We settled on Sketch libraries and <a href="https://www.goabstract.com/" target="_blank">Abstract</a> as a way of sharing and managing our components. I helped manage a library of shared global components, while each team managed their own library of product- or platform-specific components.</p>
-					<p class="f5">Since we were creating components piecemeal, we held frequent design reviews to make sure we were all in sync. Reviews were helpful for identifying components that could be used across teams and were then promoted to the shared library.</p>
+					<p class="f5">Since we were creating components piecemeal, we held frequent design reviews to make sure we were all in sync. Reviews were helpful for identifying components that could be used across teams and could then be promoted to the shared library.</p>
 
 				<h3 class="f4 mt4">Scaling components</h3>
-					<p class="f5">We approached every new project with the assumption that a component or screen design wouldn&rsquo;t be a one-off solution. Because our CARMEL guidelines emphasized <strong>coherence</strong> and <strong>efficiency</strong>, the quality of our work was evaluated on whether it reused existing Upswing components.</p>
+					<p class="f5">We approached every new project with the assumption that a component or screen design wouldn&rsquo;t be a one-off solution. Because our CARMEL guidelines emphasized <strong>coherence</strong> and <strong>efficiency</strong>, the quality of our work was directly evaluated on whether it reused existing Upswing components.</p>
 				
 					<img src="images/system-card_examples.png" alt="Card component examples" />
 					<p class="f5 caption i tc">The card component could be extended to different use cases across products.</p>
@@ -228,7 +228,7 @@
 					<p class="f5">This in turn made conversations with engineers easier when we knew upfront what components could be adapted with minimal engineering work.</p>
 
 				<h3 class="f4 mt4">Tracking progress</h3>
-					<p class="f5">I landed on a simple shared text table to track touchpoints, ownership, status, and relevant documentation so we knew what we still had left to do. We had too many non-digital touchpoints <!-- (<em>e.g.</em>, credit card plastics, physical mail assets)  -->or ones that couldn&rsquo;t easily link to existing issue tracker tools. Sometimes, a text doc will just end up being the most flexible way to PM.</p>
+					<p class="f5">I landed on a simple shared text table to track touchpoints, ownership, status, and relevant documentation so we knew what we still had left to do. We had too many non-digital touchpoints <!-- (<em>e.g.</em>, credit card plastics, physical mail assets)  -->or ones that couldn&rsquo;t easily link to existing issue tracker tools. Sometimes, the best way to PM just ends up being a text doc.</p>
 					<p class="f5">On the engineering side, I collaborated with an engineer to build a developer menu to audit components on the mobile app. On web, engineers leveraged <a href="https://storybook.js.org/" target="_blank">Storybook</a>.</p>
 					
 					<p class="tc">
@@ -238,15 +238,15 @@
 
 			<h2 class="f4 bb mt4">Results</h2>
 
-				<p class="f5">The processes that got us to shipping Upswing made us more efficient at producing quality work and communicating with our teams. Bringing product and engineering into the design system process meant we all had a shared language to talk about hierarchy, components, and visual style&mdash;conversations that could otherwise end in cross-functional misunderstandings.</p>
+				<p class="f5">The processes that helped us ship Upswing made us more efficient at producing quality work and communicating with our teams. Bringing product and engineering into the design system process meant we all had a shared language to talk about hierarchy, components, and visual style&mdash;conversations that could otherwise end in cross-functional misunderstanding.</p>
 
 				<p class="f5">Setting usability and quality standards meant that the design team presented cohesive work to our product and engineering teams, but <em>more importantly</em>, to our customers.</p>
 
 				<img class="ba br2" src="images/system-final.png" alt="Final design guidelines" />
 
-				<p class="f5">For our customers, who are already time-, resource-, and money-constrained, it can be hard to tolerate one more frustrating and disappointing experience, especially with their financial institutions.</p>
+				<p class="f5">For our customers, who are already time-, resource-, and money-constrained, it can be hard to tolerate one more frustrating, time-consuming, and disappointing interaction, especially with their financial institutions.</p>
 
-				<p class="f5">Our new processes meant that we could ship cohesive experiences faster. And a cohesive experience meant that our customers could <em>also</em> be efficient in accomplishing what they needed to in our products and enabled to take care of what actually matters to them outside our products.</p>
+				<p class="f5">Our new processes meant that we could ship cohesive experiences faster. And a cohesive experience means that our customers could likewise be efficient in accomplishing what they needed to in our products, thus enabling them to take care of what actually matters to them outside our products.</p>
 
 <!-- 				<h3 class="f5">What&rsquo;s next</h3>
 
