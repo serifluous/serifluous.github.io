@@ -1,16 +1,61 @@
 
 * {
-	font-family: "Helvetica Neue", sans-serif;
-	line-height: 1.5;
+	font-family: "Karla", sans-serif;
+	line-height: 1.6;
 }
 
-.f1,
-.f2 {
-	font-family: "Playfair Display";
-	font-weight: 900;
+body {
+	background-color: #FEFEFE;
 }
 
 img {
 	font-family: "Menlo";
 	color: lightgray;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+a {
+	color: rgba(108,0,69,1);
+	border-bottom: 2px rgba(108,0,69,0.2) solid;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 2px rgba(108,0,69,0.7) solid;
+}
+
+a:active {
+	position: relative;
+	top: 1px;
+}
+
+
+
+/*************
+	Tachyons
+**************/
+
+.f1,
+.f2,
+.f3 {
+	font-family: "Playfair Display", sans-serif;
+	font-weight: 900;
+	line-height: 1.4;
+}
+
+.bb {
+	border-color: lightgray;
+}
+
+
+
+/*************
+	Custom classes
+**************/
+
+.caption {
+	color: rgba(0,0,0,0.5);
 }
