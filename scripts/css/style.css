@@ -47,7 +47,7 @@ a:active {
 }
 
 .bb {
-	border-color: lightgray;
+	border-color: rgba(108,0,69,0.2);
 }
 
 
@@ -58,4 +58,8 @@ a:active {
 
 .caption {
 	color: rgba(0,0,0,0.5);
+}
+
+.hcolor {
+	color: #0CAC40;
 }
