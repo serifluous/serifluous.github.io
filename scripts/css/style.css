@@ -2,6 +2,7 @@
 * {
 	font-family: "Karla", sans-serif;
 	line-height: 1.6;
+	color: rgba(0,0,0,0.9);
 }
 
 body {
@@ -18,18 +19,38 @@ ul {
 }
 
 a {
-	color: rgba(108,0,69,1);
-	border-bottom: 2px rgba(108,0,69,0.2) solid;
 	text-decoration: none;
+}
+
+a:link {
+	/*color: rgba(108,0,69,1);*/
+	color: #9B0063;
+	border-bottom: 2px rgba(108,0,69,0.2) solid;
+    -webkit-transition: border-color 0.1s; /* Safari */
+    transition: border-color 0.1s;
+}
+
+a:visited {
+	color: rgba(108,0,69,1);
 }
 
 a:hover {
 	border-bottom: 2px rgba(108,0,69,0.7) solid;
+    -webkit-transition: border-color 0.15s; /* Safari */
+    transition: border-color 0.15s;
 }
 
 a:active {
 	position: relative;
 	top: 1px;
+}
+
+:focus {
+	background-color: #FBE37F;
+	padding: 1px;
+	outline: none;
+    -webkit-transition: background-color 0.5s; /* Safari */
+    transition: background-color 0.5s;
 }
 
 
