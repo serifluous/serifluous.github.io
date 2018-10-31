@@ -9,7 +9,7 @@ body {
 	background-color: #FEFEFE;
 }
 
-img {
+img, .menlo {
 	font-family: "Menlo", monospace;
 	color: lightgray;
 }
