@@ -1,8 +1,8 @@
 
 * {
 	font-family: "Karla", "Helvetica Neue", sans-serif;
-	line-height: 1.7;
-	color: rgba(0,0,0,0.9);
+	line-height: 1.5;
+	color: rgba(0,0,0,0.81);
 }
 
 body {
@@ -65,6 +65,7 @@ a:active {
 	font-family: "Playfair Display", "Menlo", sans-serif;
 	font-weight: 900;
 	line-height: 1.4;
+	color: rgba(0,0,0,0.82);
 }
 
 @media screen and (min-width: 30em) {
@@ -87,4 +88,20 @@ a:active {
 
 .hcolor {
 	color: #0CAC40;
+}
+
+.quote > :first-child {
+	border-bottom: 2px rgba(108,0,69,0.2) solid;
+}
+
+.quote > :nth-child(2) {
+	color: rgba(108,0,69,1);
+}
+
+
+@media screen and (min-width: 30em) {
+	.quote > :first-child {
+		color: rgba(108,0,69,1);
+		font-family: "Playfair Display";
+	}
 }
