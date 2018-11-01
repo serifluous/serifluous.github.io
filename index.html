@@ -32,13 +32,25 @@
 	</script>
 	<!-- end Google Analytics -->
 
+	<script>
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+		    document.getElementById("back-up").style.bottom = "0";
+		  } else {
+		    document.getElementById("back-up").style.bottom = "-100px";
+		  }
+		}
+	</script>
+
 	<title>Sarah Li, Designer</title>
 </head>
 
 <body>
 	<h1 class="ml4 ml6-l ml5-m f2 mt5-l w-80 w-70-l">Sarah Li is a product designer in San Francisco.</h1>
 	<div class="ml4 ml6-l ml5-m w-80 w-50-l">
-		<div class="mb5">
+		<div class="mb6">
 			<p class="f5">Currently looking for my next <a href="https://kottke.org/18/08/the-carrot-is-not-important-chasing-it-is" target="blank">arbitrary stupid goal</a> and <a href="https://eand.co/if-the-point-of-capitalism-is-to-escape-capitalism-then-whats-the-point-of-capitalism-bedd1b2447d" target="_blank">giver</a> of <a href="https://frankchimero.com/blog/2011/the-long-hard-stupid-way/" target="_blank">gifts</a>.</p>
 			<p class="f5">From 2017&ndash;2018, I was a Product Designer on LendUp&rsquo;s Arrow Card and led the design of the iOS and Android apps from launch to over 15,000 users. I also worked on cross-platform projects that reached 850,000+ customers.</p>
 			<p class="f5">Before that, I was at <a href="https://www.hightail.com/" target="_blank">Hightail Spaces</a> (acq. by OpenText), <a href="https://angel.co/clementine-labs" target="_blank">Clementine</a> (acq. by Dropbox), and <a href="https://girlswhocode.com/" target="_blank">Girls Who Code</a>.</p>
@@ -66,7 +78,7 @@
 					<li><strong>Industry reading</strong>&mdash;Some highlights were <a href="https://www.usfinancialdiaries.org/book/" target="_blank"><em>The Financial Diaries</em></a>, <a href="https://www.theatlantic.com/magazine/archive/2016/05/my-secret-shame/476415/" target="_blank"><em>The Atlantic</em>&rsquo;s reporting on income volatility in the middle class</a>, and <a href="https://www.consumerfinance.gov/data-research/research-reports/financial-well-being/" target="_blank">research by the CFPB</a> (Consumer Financial Protection Bureau).</li>
 				</ul> -->
 
-		<div class="mb5">
+		<div class="mb6">
 		<h1 class="f2" id="case-dashboard">Redesigning the Arrow Card dashboard</h1>
 			<p class="tc">
 				<img class="measure-narrow-ns" src="images/dashboard-hero.png" alt="Screenshot of finished Arrow Card mobile app" />
@@ -177,7 +189,7 @@
 				<p class="f5 mt4 cb">The Arrow Card app is available now on the <a href="https://itunes.apple.com/us/app/arrow-card/id1228440036?mt=8" target="_blank">App Store</a> and <a href="https://play.google.com/store/apps/details?id=com.lcard_app" target="_blank">Play Store</a>.</p>
 		</div>
 
-		<div class="mb5">
+		<div class="mb6">
 		<h1 class="f2" id="case-system">Managing a design system</h1>
 			<!-- <img src="" alt="Design system flowchart for engineering, design, and source of truth" /> -->
 			<p class="f5">In late 2017, LendUp adopted a new visual identity, Upswing. We had new styles and some basic components but still had a long way to ago before it could scale across all our products and platforms.</p>
@@ -344,7 +356,7 @@
 				<p class="f5">Stay tuned!</p>
 		</div>
 
-		<div class="mb7">
+		<div class="mb6">
 			<h1 class="f2" id="more-work">Need more?</h1>
 				<p class="f5">I&rsquo;m on 📸 <a href="https://www.instagram.com/serifluous/" target="_blank">Instagram</a>, 📝 <a href="https://medium.com/@serifluous" target="_blank">Medium</a>, and 🐙 <a href="https://github.com/serifluous" target="_blank">Github</a>.</p>
 <!-- 
@@ -358,6 +370,8 @@
 
 <!-- 		<h1 class="f3" id="more-work">More work</h1> -->
 	</div>
+
+	<div id="back-up" class="w-100"><p class="tc tr-ns pb0 pt0 pb3-l pr5-m pr6-l">🕴 <a href="">Elevator up</a></p></div>
 
   	<!-- @fat's jQuery zoom plugin https://github.com/fat/zoom.js-->
 	<script src="scripts/js/zoom.js"></script>
