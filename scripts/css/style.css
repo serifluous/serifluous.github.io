@@ -124,7 +124,7 @@ a:active {
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3) {
     	#back-up > p {
-    		padding-bottom: 30px;
+    		padding-bottom: 16px;
     	}
     }
 
