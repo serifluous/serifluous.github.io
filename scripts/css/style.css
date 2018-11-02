@@ -119,6 +119,15 @@ a:active {
 	transition: bottom 0.3s;
 }
 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+    	#back-up > p {
+    		padding-bottom: 30px;
+    	}
+    }
+
 @media screen and (min-width: 60em) {
 	#back-up {
 		background-color: transparent;
