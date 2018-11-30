@@ -112,6 +112,44 @@ a:hover {
 	margin-top: -34px;
 }
 
+#pastframe {
+	background-color: white;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	width: 100%;
+}
+
+#pastframe p {
+	color: #9B0063;
+	margin-left: 30px;
+}
+
+#pastframe a {
+	text-decoration: none;
+}
+
+#pastframe a:link {
+	color: #9B0063;
+	border-bottom: 2px rgba(108,0,69,0.2) solid;
+    -webkit-transition: border-color 0.1s; /* Safari */
+    transition: border-color 0.1s;
+}
+
+#pastframe a:visited {
+	color: #9B0063;
+}
+
+#pastframe a:hover {
+	border-bottom: 2px rgba(108,0,69,0.7) solid;
+    -webkit-transition: border-color 0.15s; /* Safari */
+    transition: border-color 0.15s;
+}
+
+#pastframe a:active {
+	position: relative;
+	top: 1px;
+}
+
 
 /*
 ***********************
